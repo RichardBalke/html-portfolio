@@ -1,0 +1,15 @@
+body {
+  background-color: #102542;
+  margin: 0;
+  padding: 0;
+}
+
+h1 h2 h3 h4 h5 p {
+    
+}
+
+header,
+footer {
+  background-color: #d1d1d1;
+  height: 100px;
+}
