@@ -1,12 +1,34 @@
 body {
-  background-color: #102542;
+  background-color: rgb(32, 42, 50) ;
   margin: 0;
   padding: 0;
+}
+
+#header {
+background-color: rgb(26, 31, 39);
+}
+
+div {
+  border: 3px solid red;
 }
 
 #index-container {
   display: flex;
   flex-direction: column;
+}
+
+.chart {
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+
+.chart-text {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  fill: #e79f57;
+  text-anchor: middle;
+  text-wrap: wrap;
 }
 
 #title-container {
@@ -28,20 +50,10 @@ body {
   margin: 0px 20px 0px 20px;
 }
 
-#aboutme-container {
+#intro-skills-container {
   display: flex;
-  flex-direction: column;
-  max-width: 1080px;
-  margin: auto;
-}
-
-.aboutme-image-container img {
-  height: auto;
-  width: 200px;
-}
-
-.aboutme-image-container {
-  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .main-portfolio-container {
@@ -81,13 +93,13 @@ h4,
 h5,
 nav {
   font-family: "Roboto", sans-serif;
-  color: #e79f57;
+  color: rgb(245, 246, 227);
   font-weight: 400;
 }
 
 p {
   font-family: "Lora", serif;
-  color: #e6dddd;
+  color: rgb(10, 15, 13);
   padding: 10px;
 }
 
