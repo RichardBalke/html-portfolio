@@ -1,0 +1,124 @@
+  #index-container {
+    background-image: url(/Images/background-Image-Portfolio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  #title-container {
+    max-width: 370px;
+    margin: auto;
+    height: 900px;
+    background-color: rgb(32, 42, 50);
+  }
+  
+  #title-header2,
+  #title-paragraph {
+    margin: 10px 20px 10px 20px;
+  }
+  
+  #title-img-container,
+  #intro-skills-container,
+  #main-portfolio-container {
+    max-width: 1080px;
+    margin: auto;
+  }
+  
+  div {
+    border: 3px solid red;
+  }
+  
+  .chart {
+    width: 400px;
+    height: auto;
+    margin: auto;
+  }
+  
+  .chart-text {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    fill: #e79f57;
+    text-anchor: middle;
+    text-wrap: wrap;
+  }
+  
+  #title-img-container {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-around;
+    max-width: 1080px;
+    margin: auto;
+  }
+  
+  #title-img-container img {
+    height: auto;
+    width: 400px;
+    margin: 0px 20px 0px 20px;
+  }
+  
+  #intro-skills-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(245, 246, 227);
+  }
+  
+  .main-portfolio-container {
+    max-width: 1080px;
+    margin: auto;
+  }
+  
+  .portfolio-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .portfolio-img-container img {
+    height: auto;
+    width: 200px;
+  }
+  
+  .portfolio-img-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .portfolio-img-container a {
+    text-align: center;
+  }
+  
+ 
+  @keyframes scroll {
+    0% {
+      transform: translateX();
+    }
+  
+    100% {
+      transform: translateX(calc(-270px * 4));
+    }
+  }
+  
+  .slider {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .slideimg {
+    width: 230px;
+  }
+  
+  .slide-track {
+    animation: scroll 30s linear infinite;
+    display: flex;
+    width: calc(270px * 4);
+  }
+  

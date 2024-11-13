@@ -1,89 +1,11 @@
 body {
-  background-color: rgb(32, 42, 50) ;
+  background-color: rgb(32, 42, 50);
   margin: 0;
   padding: 0;
 }
 
 #header {
-background-color: rgb(26, 31, 39);
-}
-
-div {
-  border: 3px solid red;
-}
-
-#index-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.chart {
-  width: 400px;
-  height: auto;
-  margin: auto;
-}
-
-.chart-text {
-  font-family: Arial, sans-serif;
-  font-size: 10px;
-  fill: #e79f57;
-  text-anchor: middle;
-  text-wrap: wrap;
-}
-
-#title-container {
-  max-width: 1080px;
-  margin: auto;
-}
-
-#title-img-container {
-  display: flex;
-  flex-direction: wrap;
-  justify-content: space-around;
-  max-width: 1080px;
-  margin: auto;
-}
-
-#title-img-container img {
-  height: auto;
-  width: 400px;
-  margin: 0px 20px 0px 20px;
-}
-
-#intro-skills-container {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.main-portfolio-container {
-  max-width: 1080px;
-  margin: auto;
-}
-
-.portfolio-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.portfolio-img-container img {
-  height: auto;
-  width: 200px;
-}
-
-.portfolio-img-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.portfolio-img-container a {
-  text-align: center;
-}
-
-.hf-container {
-  max-width: 1080px;
-  margin: auto;
+  background-color: rgb(26, 31, 39);
 }
 
 h1,
@@ -92,7 +14,7 @@ h3,
 h4,
 h5,
 nav {
-  font-family: "Roboto", sans-serif;
+  font-family: "Averia Sans Libre", sans-serif;
   color: rgb(245, 246, 227);
   font-weight: 400;
 }
@@ -108,32 +30,4 @@ footer {
   background-color: #d1d1d1;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX();
-  }
 
-  100% {
-    transform: translateX(calc(-270px * 4));
-  }
-}
-
-.slider {
-  overflow: hidden;
-  position: relative;
-}
-
-.slide {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.slideimg {
-  width: 230px;
-}
-
-.slide-track {
-  animation: scroll 30s linear infinite;
-  display: flex;
-  width: calc(270px * 4);
-}
