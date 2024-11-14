@@ -1,19 +1,34 @@
 .hf-container {
-}
-
-.hf-container nav {
-}
-
-.hf-container ul {
   display: flex;
-  list-style-type: none;
+  background-image: linear-gradient(to bottom, rgb(32, 42, 50), rgb(25, 31, 38) );
+  height: 100px;
 }
 
-.hf-container li {
+.hf-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-container {
+  display: flex;
+  width: 33%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-button {
+  cursor: pointer;
 }
 
 .hf-container img {
-    width: 100px;
+    width: 50px;
     height: auto;
     border-radius: 50%;
+}
+
+.brand-name-container {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
