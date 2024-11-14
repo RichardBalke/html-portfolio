@@ -9,18 +9,44 @@
   }
   
   #title-container {
-    max-width: 370px;
+    display: flex;
+    flex-direction: column;
+    max-width: 780px;
+    width: 100%;
     margin: auto;
-    height: 900px;
+    height: 1200px;
     background-color: rgb(32, 42, 50);
     background-image: linear-gradient(to bottom right, rgb(25, 31, 38), rgb(32, 40, 47) )
   }
   
-  #title-header2,
-  #title-paragraph {
+  #title-header2 {
     margin: 10px 20px 10px 20px;
+    font-size: 160px;
+    text-align: center;
+    text-shadow: 0px 5px 10px black;
+  } 
+
+  #title-header2 hr {
+    width: 80%;
+    height: 5px;
+    background-color: rgb(245, 246, 227);
+    border-radius: 50%;
+  }
+
+  #title-header3 {
+    margin: 0px 30px 10px 30px;
+    text-align: center;
+    font-size: 100px!important;
+    text-shadow: 0px 5px 10px black;
   }
   
+  #title-paragraph {
+    color: rgb(245, 246, 227);
+    margin: 10px 10% 0px 10%;
+    text-align: center;
+    text-shadow: 0px 5px 10px black;
+  }
+
   #title-img-container,
   #intro-skills-container,
   #main-portfolio-container {
