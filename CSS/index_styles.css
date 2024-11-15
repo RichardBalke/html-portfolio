@@ -1,33 +1,84 @@
+  /* @keyframes headerdown {
+    0% {
+      margin-top: -100px;
+    }    
+    50% {
+      margin-top: -30px;
+    }
+    100% {
+      margin-top: 0px;
+    }
+  } */
+
+  /* .hf-container {
+    margin-top: -100px;
+    animation: headerdown 2s ease-in-out forwards;
+    animation-delay: 4s;
+  } */
+  
   #index-container {
-    /* background-image: url(/Images/background-Image-Portfolio.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
     display: flex;
     flex-direction: column;
     overflow: hidden;
   }
 
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
 
   .scroll-img-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
     position: absolute;
+    overflow: hidden;
   }
 
   .scroll-img {
-    height: auto;
-    width: 100%;
+    opacity: 0.1;
   }
 
+  @keyframes slideleft {
+    0% {
+      transform: translateX(-0px);
+    }    
+    85% {
+      transform: translateX(-600px);
+    }
+    100% {
+      transform: translateX(-540px);
+    }
+  }
+  @keyframes slideright {
+    0% {
+      transform: translateX(0px);
+    }    
+    85% {
+      transform: translateX(600px);
+    }
+    100% {
+      transform: translateX(540px);
+    }
+  }
 
-
+  .scroll-img-container-left {
+    animation: slideleft 5s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+  .scroll-img-container-right {
+    animation: slideright 5s ease-in-out forwards;
+    animation-delay: 1s;
+  }
 
 
   #title-container {
     display: flex;
     flex-direction: column;
-    max-width: 680px;
+    max-width: 1080px;
     width: 100%;
     margin: auto;
     height: 1200px;
@@ -70,10 +121,6 @@
     margin: auto;
   }
   
-  div {
-    border: 3px solid red;
-  }
-  
   .chart {
     width: 400px;
     height: auto;
@@ -110,8 +157,13 @@
   }
   
   .main-portfolio-container {
+    display: flex;
+    flex-direction: column;
     max-width: 1080px;
     margin: auto;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
   }
   
   .portfolio-container {
@@ -160,7 +212,7 @@
   }
   
   .slide-track {
-    animation: scroll 30s linear infinite;
+    animation: scroll 20s linear infinite;
     display: flex;
     width: calc(270px * 4);
   }
