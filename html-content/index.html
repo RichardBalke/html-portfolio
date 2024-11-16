@@ -18,7 +18,23 @@
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <div class="hf-container">
+      <div class="logo-container">
+        <a href="/html-content/index.html"><img src="/Images/Logo.jpg" alt=""></a>
+      </div>
+      <div class="brand-name-container">
+        <h1>Richard's Portfolio</h1>
+      </div>
+      <div class="nav-container">
+        <nav>
+            <button class="nav-button" onclick="location.href= 'about.html'">About me</button>
+            <button class="nav-button" onclick="location.href= 'contact.html'">Contact</button>
+            <button class="nav-button" onclick="location.href= 'boxes.html'">Portfolio</button>
+        </nav>
+      </div>
+    </div>
+  </header>
 
   <main>
 
@@ -148,11 +164,13 @@
   </main>
 
   <footer></footer>
-  <script src="/JavaScript/script.js"></script>
+  <script src="/JavaScript/script.js"></script> 
   <script>
-    includeHTML("header.html", "header");
+
     includeHTML("footer.html", "footer");
   </script>
+
+
 </body>
 
-</html>
+</html> 
