@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
     sessionStorage.setItem("introAnimationShown", "true");
   } else {
     // Ensure animations do not restart on reload
-    document.querySelector('.scroll-img-container-left').style.transform = 'translateX(-540px)';
-    document.querySelector('.scroll-img-container-right').style.transform = 'translateX(540px)';
+    document.querySelector('.scroll-img-container-left').style.transform = 'translateX(-400px)';
+    document.querySelector('.scroll-img-container-right').style.transform = 'translateX(400px)';
     document.querySelector('.hf-container').style.transform = 'translatey(0px)';
   }
 });
