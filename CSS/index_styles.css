@@ -45,7 +45,7 @@
       transform: translateX(-600px);
     }
     100% {
-      transform: translateX(-540px);
+      transform: translateX(-340px);
     }
   }
   @keyframes slideright {
