@@ -31,4 +31,16 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+  document.getElementById('about-button').addEventListener('click', function() {
+    window.location.href = 'about.html';
+  });
+
+  document.getElementById('contact-button').addEventListener('click', function() {
+    window.location.href = 'contact.html';
+  });
+
+  document.getElementById('portfolio-button').addEventListener('click', function() {
+    window.location.href = 'boxes.html';
+  });
+
 
