@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('.scroll-img-container-left').classList.add('animate');
     document.querySelector('.scroll-img-container-right').classList.add('animate');
     document.querySelector('.hf-container').classList.add('animate');
-    
+
     // Mark the animation as shown in sessionStorage
     sessionStorage.setItem("introAnimationShown", "true");
   } else {

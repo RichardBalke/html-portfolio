@@ -8,6 +8,14 @@ body {
   border: 3px solid red;
 } */
 
+.content-split {
+  width: 100%;
+  border-radius: 30%;
+  background-image: linear-gradient(to right, rgb(245, 246, 227), rgb(26, 31, 39), rgb(245, 246, 227));
+  height: 5px;
+  margin-top: 0px;
+}
+
 #header {
   background-color: rgb(26, 31, 39);
 }
@@ -38,7 +46,8 @@ p {
 footer {
   background-color: rgb(245, 246, 227);
   border-top-left-radius: 50%;
-  border-top-right-radius: 50%;;
+  border-top-right-radius: 50%;
+  ;
 }
 
 footer img {
