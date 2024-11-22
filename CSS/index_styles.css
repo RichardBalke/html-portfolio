@@ -120,12 +120,12 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  background-color: rgb(245, 246, 227);
 }
 
 #introduction-container,
 #skills-container,
 #portfolio-container {
-  background-image: linear-gradient(to top, rgb(25, 31, 38), rgb(32, 40, 47));
   flex: 1;
 }
 
@@ -160,8 +160,6 @@
 .main-portfolio-container {
   display: flex;
   flex-direction: column;
-  max-width: 1080px;
-  margin: auto;
   text-align: center;
   font-size: 30px;
   margin-bottom: 50px;
@@ -190,7 +188,7 @@
 
 @keyframes scroll {
   0% {
-    transform: translateX();
+    transform: translateX(0px);
   }
 
   100% {
@@ -212,7 +210,7 @@
 }
 
 .slide-track {
-  animation: scroll 20s linear infinite;
+  animation: scroll 5s linear infinite;
   display: flex;
   width: calc(270px * 4);
 }
