@@ -1,0 +1,52 @@
+#aboutme-container {
+    max-width: 1080px;
+    justify-content: center;
+    margin: auto;
+}
+
+.aboutme-content-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#aboutme-img {
+    height: auto;
+    width: 220px;
+}
+
+#aboutme-content-container {
+    width: 840px;
+}
+
+td {
+    color: rgb(245, 246, 227);
+}
+
+#info-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+p {
+    color: rgb(245, 246, 227)!important;
+}
+
+.personalia-container {
+    width: 100%;
+    border-right: 2px solid rgb(245, 246, 227);
+}
+
+.vaardigheden-container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2, h3, p, table {
+    margin: 0px 20px 0px 20px;
+}
+
+@media (max-width: 901px) {
+
+}

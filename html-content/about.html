@@ -1,23 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/CSS/style.css">
-  <link rel="stylesheet" href="/CSS/h&f_styles.css">
-  <title>Document</title>
-</head>
-<body>
-  <header></header>
-  <main>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor aspernatur, minima, dolore aliquam voluptas consequuntur cupiditate quis natus distinctio officiis, architecto recusandae? Ullam commodi obcaecati, sequi illo ex vel natus.</p>
-  </main>
-  <footer></footer>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/h&f_styles.css" />
+    <link rel="stylesheet" href="/CSS/aboutme_styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
 
-  <script src="/JavaScript/script.js"></script>
-  <script>
-    includeHTML("header.html", "header");
-    includeHTML("footer.html", "footer");
-  </script>
-</body>
+    <main>
+      <div id="aboutme-container">
+        <div class="aboutme-content-container">
+          <div>
+            <img id="aboutme-img" src="/Images/foto-richard-zwartwit.png" alt="" />
+          </div>
+          <div id="aboutme-content-container" class="aboutme-content">
+            <h1>Richard Balke</h1>
+            <h2>Over Mij</h2>
+            <p>
+              Ik ben een enthousiaste en leergierig persoon die een
+              carrière-switch maakt van het onderwijs naar de IT. Als autodidact
+              heb ik aanleg voor zelfstudie en ben ik voortdurend bezig mijn
+              kennis en vaardigheden uit te breiden. Door ervaring in het
+              onderwijs ben ik sterk geworden in probleemoplossend denken,
+              communicatie en organisatie. Met motivatie en doorzettingsvermogen
+              ben ik klaar om deze nieuwe uitdaging aan te gaan.
+            </p>
+          </div>
+        </div>
+        <hr>
+        <div id="info-container">
+          <div class="personalia-container">
+            <div class="aboutme-content">
+              <h2>Personalia</h2>
+              <hr>
+              <p>richardbalke@gmail.com</p>
+              <p>Parallelweg 9 <br> 6074 BV, Melick</p>
+              <p>+31 (0) 6 40 26 01 78</p>
+              <p>LinkedIn</p>
+            </div>
+
+            <div class="aboutme-content">
+              <h2>Opleidingen</h2>
+              <hr>
+              <h3>Avans Hogeschool</h3>
+              <p>BSc. Informatie / Software engineering <br>sept. 2024</p>
+              <br>
+              <h3>Windesheim</h3>
+              <p>Bachelor's degree <br> Lichamelijke opvoeding</p>
+              <p>2015-2022</p>
+              <br>
+              <h3>ROC van Amsterdam</h3>
+              <p>MBO 4, Sport- en <br> Bewegingscoördinator</p>
+              <p>2009 - 2014</p>
+              
+
+            </div>
+          </div>
+
+          <div class="vaardigheden-container">
+            <div class="aboutme-content" vaardigheden>
+              <table>
+                <th>
+                  <h2>
+                    Vaardigheden
+                    <hr />
+                  </h2>
+                </th>
+                <tr>
+                  <td>HTML</td>
+                </tr>
+                <tr>
+                  <td>CSS</td>
+                </tr>
+                <tr>
+                  <td>JavaScript</td>
+                </tr>
+                <tr>
+                  <td>Python</td>
+                </tr>
+              </table>
+            </div>
+            <div>
+              <h2>Werkervaring</h2>
+              <hr />
+              <div class="aboutme-content">
+                <h2>Combinatiefunctionaris Onderwijs</h2>
+                <h3>Punt Welzijn - Weert</h3>
+                <p>Als Combinatiefunctionaris onderwijs, fungeerde ik als verbindingsstuk tussen de organisatie Punt Welzijn en de basisscholen waar ik werkzaam was. Ik zorgde naast het geven van gymlessen, voor een heldere communicatie tussen beide partijen.</p><br>
+              </div>
+              <div class="aboutme-content">
+                <h2>Pedagogisch Medewerker (Sport)</h2>
+                <h3>Stichting Popeye - Diemen</h3>
+                <p>Naast de standaard pedagogische en kinderopvang gerelateerde
+                  werkzaamheden werd ik ook toegewezen als sportleraar. Hierdoor gaf ik, naast
+                  het begeleiden van mijn eigen groep, ook sportlessen aan alle groepen van de
+                  kinderopvang.</p><br>
+              </div>
+              <div class="aboutme-content">
+                <h2>Docent Turnen</h2>
+                <h3>GTV De Badhoeve - Badhoevedorp</h3>
+                <p>Maakte en implementeerde lessen gebaseerd op de behoeftes en
+                  vaardigheden van de kinderen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="/JavaScript/script.js"></script>
+    <script>
+      includeHTML("header.html", "header");
+      includeHTML("footer.html", "footer");
+    </script>
+  </body>
 </html>

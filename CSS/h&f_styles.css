@@ -11,13 +11,33 @@
   justify-content: space-evenly;
 }
 
+.nav-button {
+  background: none; 
+  border: none;
+  cursor: pointer;
+  color: rgb(245, 246, 227);
+  font-size: 18px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 100px 0px 100px;
+}
+
 .footer-nav-button {
   cursor: pointer;
   border: none;
   background: none;
-  color: rgb(245, 246, 227);
   font-size: 20px;
   margin: 10px;
+}
+
+#footer-contact-gegevens-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .hf-container img {
@@ -32,4 +52,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  background-color: rgb(245, 246, 227);
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+}
+
+footer p, footer h1 {
+  padding: 0!important;
+  margin-left: 20px;
+  color: rgb(26, 31, 39);
+}
+
+footer img {
+  width: 50px;
+  height: auto;
+}
+
+footer hr {
+  width: 500px;
+  border-radius: 50%;
+}
+
+.footer-content-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.footer-content {
+  padding: 15px;
+  margin: auto;
+  width: 33%;
 }
