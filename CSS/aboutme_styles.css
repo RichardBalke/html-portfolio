@@ -13,6 +13,7 @@
 #aboutme-img {
     height: auto;
     width: 220px;
+    border-radius: 50%;
 }
 
 #aboutme-content-container {
@@ -47,6 +48,15 @@ h2, h3, p, table {
     margin: 0px 20px 0px 20px;
 }
 
+td hr {
+    width: 90px;
+    height: 3px;
+    background-color: white;
+}
+
+
+
 @media (max-width: 901px) {
 
 }
+
