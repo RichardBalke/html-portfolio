@@ -129,6 +129,13 @@
   flex: 1;
 }
 
+#introduction-container h2, #portfolio-container h2, #skills-container h2 {
+  color: rgb(25, 31, 38);
+  text-align: center;
+  font-size: 3rem;
+  margin: 10px;
+}
+
 .chart {
   width: 400px;
   height: auto;
@@ -210,7 +217,7 @@
 }
 
 .slide-track {
-  animation: scroll 5s linear infinite;
+  animation: scroll 25s linear infinite;
   display: flex;
   width: calc(270px * 4);
 }
