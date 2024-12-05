@@ -43,3 +43,12 @@ p {
   font-size: 20px;
 }
 
+
+@media (max-width: 1200px) {
+ footer p {
+    font-size: 1.5vw;
+  }
+
+
+  
+}
