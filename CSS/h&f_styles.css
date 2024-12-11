@@ -32,7 +32,6 @@
   border: none;
   background: none;
   font-size: 20px;
-  margin: 10px;
 }
 
 #footer-contact-gegevens-container {
@@ -56,7 +55,6 @@
 
 footer {
   background-color: rgb(245, 246, 227);
-  max-height: 300px;
 }
 
 footer p, footer h1 {
@@ -84,4 +82,18 @@ footer hr {
 .footer-content {
   margin: auto;
   width: 33%;
+}
+
+@media (max-width: 800px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -29,7 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
     imgRight.style.transform = 'translateX(400px)';
     headerShow.style.transform = 'translatey(0px)';
   }
+
+  if (window.matchMedia("(max-width: 800px)").matches) {
+    const handleAnimationEnd = (container) => {
+      container.style.display = "none";
+    };
+    imgLeft.addEventListener("animationend", () => handleAnimationEnd(imgLeft));
+    imgRight.addEventListener("animationend", () => handleAnimationEnd(imgRight));
+  }
 });
+
+
 
 document.getElementById('home-button').addEventListener('click', function() {
   window.location.href = 'index.html';
@@ -47,6 +57,4 @@ document.getElementById('home-button').addEventListener('click', function() {
   document.getElementById('portfolio-button').addEventListener('click', function() {
     window.location.href = 'boxes.html';
   });
-
-
 

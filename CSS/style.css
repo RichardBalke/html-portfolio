@@ -40,15 +40,33 @@ p {
   font-family: "Lora", serif;
   color: rgb(10, 15, 13);
   padding: 10px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 
-@media (max-width: 1200px) {
- footer p {
-    font-size: 1.5vw;
-  }
+@media (max-width: 950px) {
+ h2 {
+  font-size: 16vw!important;
+}
+
+h3 {
+  font-size: 8vw!important;
+}
+
+p {
+  font-size: 2.5vw;
+  text-align: center;
+}
+
+.footer-nav-button {
+  font-size: 4vw;
+}
+
+.brand-name-container {
+  display: none;
+}
+
+}
 
 
   
-}

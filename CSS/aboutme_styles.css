@@ -7,7 +7,12 @@
 .aboutme-content-container {
     display: flex;
     flex-direction: row;
+    background-color: rgb(245, 246, 227);
+    padding-bottom: 10px;
+}
 
+.aboutme-content-container * {
+    color: rgb(26, 31, 39)!important;
 }
 
 #aboutme-img {
@@ -20,8 +25,13 @@
     width: 840px;
 }
 
-td {
+.personalia-container * {
     color: rgb(245, 246, 227);
+}
+
+
+.vaardigheden-container *{
+    color: rgb(26, 31, 39)!important;
 }
 
 #info-container {
@@ -30,18 +40,17 @@ td {
     margin: auto;
 }
 
-p {
-    color: rgb(245, 246, 227)!important;
-}
-
 .personalia-container {
     width: 100%;
     border-right: 2px solid rgb(245, 246, 227);
+    background-color: rgb(32, 42, 50);
+    padding: 10px 0px;
 }
 
 .vaardigheden-container {
     display: flex;
     flex-direction: column;
+    background-color: rgb(245, 246, 227);
 }
 
 h2, h3, p, table {
@@ -51,10 +60,16 @@ h2, h3, p, table {
 td hr {
     width: 90px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(26, 31, 39);
 }
 
+td {
+    color: rgb(245, 246, 227);
+}
 
+tr th {
+    font-size: 20px;
+}
 
 @media (max-width: 901px) {
 
