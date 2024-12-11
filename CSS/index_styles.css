@@ -143,9 +143,8 @@
 }
 
 .chart-text {
-  font-family: Arial, sans-serif;
+  font-family: "Lora", serif;
   font-size: 10px;
-  fill: #e79f57;
   text-anchor: middle;
   text-wrap: wrap;
 }
@@ -222,10 +221,18 @@
   width: calc(270px * 4);
 }
 
+
 @media (max-width: 900px) {
+
+
+}
+
+@media (max-width: 800px) {
+  .nav-container {
+    display: none!important;
+  }
   #intro-skills-container {
     flex-direction: column;
     text-align: center;
   }
-
 }

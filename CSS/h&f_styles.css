@@ -24,6 +24,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  height: auto;
 }
 
 .footer-nav-button {
@@ -69,7 +70,7 @@ footer img {
 }
 
 footer hr {
-  width: 500px;
+  width: 25vw;
   border-radius: 50%;
 }
 
