@@ -1,3 +1,4 @@
+/* Header animatie */
 @keyframes headerdown {
   0% {
     margin-top: -100px;
@@ -17,13 +18,11 @@
   animation: headerdown 2s ease-in-out forwards;
   animation-delay: 4s;
 }
+/* Header animatie einde */
 
-#index-container {
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
 
+
+/* Splash screen begin */
 .scroll-img-container {
   display: flex;
   flex-direction: row;
@@ -35,10 +34,10 @@
   overflow: hidden;
 }
 
-
-  /* .scroll-img {
-    opacity: 0.1;
-  } */
+  .scroll-img {
+  width: auto;
+  height: 100vh;
+  }
 
 @keyframes slideleft {
   0% {
@@ -77,20 +76,31 @@
   animation: slideright 5s ease-in-out forwards;
   animation-delay: 1s;
 }
+/* Splash screen einde */
 
+
+
+#index-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+
+/* De intro tekst */
 #title-container {
   display: flex;
   flex-direction: column;
   max-width: 800px;
   width: 100%;
   margin: auto;
-  height: 1495px;
+  height: 100vh;
   background-image: linear-gradient(to bottom, rgb(25, 31, 38), rgb(32, 40, 47))
 }
 
 #title-header2 {
   margin: 10px 20px 10px 20px;
-  font-size: 160px;
   text-align: center;
   text-shadow: 0px 1px 1px black;
 }
@@ -105,7 +115,6 @@
 #title-header3 {
   margin: 0px 30px 10px 30px;
   text-align: center;
-  font-size: 160px;
   text-shadow: 0px 1px 1px black;
 }
 
@@ -115,7 +124,11 @@
   text-align: center;
   text-shadow: 0px 1px 1px black;
 }
+/* Intro tekst einde */
 
+
+
+/* intro/portfolio/skills */
 #intro-skills-container {
   display: flex;
   flex-direction: row;
@@ -158,20 +171,6 @@
   text-wrap: wrap;
 }
 
-#title-img-container {
-  display: flex;
-  flex-direction: wrap;
-  justify-content: space-around;
-  max-width: 1080px;
-  margin: auto;
-}
-
-#title-img-container img {
-  height: auto;
-  width: 400px;
-  margin: 0px 20px 0px 20px;
-}
-
 .main-portfolio-container {
   display: flex;
   flex-direction: column;
@@ -199,8 +198,11 @@
 .portfolio-img-container a {
   text-align: center;
 }
+/* intro/portfolio/skills einde */
 
 
+
+/* Portfolio slider begin */
 @keyframes scroll {
   0% {
     transform: translateX(0px);
@@ -229,6 +231,8 @@
   display: flex;
   width: calc(270px * 4);
 }
+/* Portfolio slider einde */
+
 
 
 @media (max-width: 950px) {
@@ -243,6 +247,11 @@
   #intro-skills-container p {
     margin: 10px 20px;
   }
+}
+
+@media (max-width: 1700px) {
+
+
 }
 
 
