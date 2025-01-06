@@ -30,9 +30,9 @@ h2,
 h3,
 h4,
 h5,
-nav {
+nav, table * {
   font-family: "Averia Sans Libre", sans-serif;
-  color: rgb(245, 246, 227);
+  color: rgb(212, 175, 55)!important;
   font-weight: 400;
 }
 

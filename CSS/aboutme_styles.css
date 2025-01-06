@@ -7,8 +7,7 @@
 .aboutme-content-container {
     display: flex;
     flex-direction: row;
-    background-color: rgb(245, 246, 227);
-    padding-bottom: 10px;
+    background-color: rgb(20, 34, 70);
 }
 
 .aboutme-content-container * {
@@ -18,7 +17,6 @@
 #aboutme-img {
     height: auto;
     width: 220px;
-    border-radius: 50%;
 }
 
 #aboutme-content-container {
@@ -32,6 +30,19 @@
 
 .vaardigheden-container *{
     color: rgb(26, 31, 39)!important;
+}
+
+.skills-Table-Box {
+    background-image: linear-gradient(to right, rgb(219, 197, 152), rgb(212, 175, 55)) ;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.skills-Table-Box-Empty {
+    background-color: grey;
+    opacity: 30%;
+    width: 100px;
+    border-radius: 10px;
 }
 
 #info-container {
