@@ -46,16 +46,17 @@ p {
 
 @media (max-width: 950px) {
  h2 {
-  font-size: 16vw!important;
+  font-size: 100px!important;
 }
 
 h3 {
-  font-size: 8vw!important;
+  font-size: 60px!important;
 }
 
 p {
-  font-size: 2.5vw;
+  font-size: 20px;
   text-align: center;
+  margin: 0% 2% 0% 2% !important;
 }
 
 .footer-nav-button {
