@@ -1,35 +1,35 @@
-#aboutme-container {
+#aboutme-Container {
     max-width: 1080px;
     justify-content: center;
     margin: auto;
 }
 
-.aboutme-content-container {
+.aboutme-Content-Container {
     display: flex;
     flex-direction: row;
     background-color: rgb(20, 34, 70);
 }
 
-#aboutme-img {
+#aboutme-Img {
     height: auto;
     width: 220px;
 }
 
-#aboutme-text-container  {
+#aboutme-Text-Container  {
     width: 840px;
 }
 
-#aboutme-text-container p {
+#aboutme-Text-Container p {
     color: rgb(245, 246, 227) !important;
     margin-right: 30px;
 }
 
-.personalia-container *, td {
+.personalia-Container *, td {
     color: rgb(245, 246, 227);
 }
 
 
-.vaardigheden-container *{
+.vaardigheden-Container *{
     color: rgb(26, 31, 39)!important;
 }
 
@@ -46,27 +46,27 @@
     border-radius: 10px;
 }
 
-#info-container {
+#info-Container {
     display: flex;
     flex-direction: row;
     margin: auto;
 }
 
-.personalia-container {
+.personalia-Container {
     width: 100%;
     border-right: 2px solid rgb(245, 246, 227);
     background-color: rgba(53, 52, 52, 0.31);
     padding: 10px 0px;
 }
 
-.vaardigheden-container {
+.vaardigheden-Container {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to right, white, rgb(245, 246, 227));
 }
 
 h2, h3, p, table {
-    margin: 0px 20px 0px 20px;
+    margin: 10px 20px 0px 20px;
 }
 
 td hr {
@@ -75,11 +75,11 @@ td hr {
     background-color: rgb(26, 31, 39);
 }
 
-.aboutme-content p span {
+.aboutme-Content p span {
     background-color: rgb(212, 175, 55);
     color: rgb(245, 246, 227) !important;
 }
-.aboutme-content p i {
+.aboutme-Content p i {
     color: rgb(212, 175, 55) !important;
 }
 

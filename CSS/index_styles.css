@@ -149,10 +149,10 @@
 }
 
 #title-container-img {
-  width: 300px;
+  width: 400px;
   height: auto;
   border-radius: 50% 20% / 10% 40%;
-  margin: 50px 0px 50px 0px;
+  margin-top: 50px;
 }
 /* Intro tekst einde */
 
