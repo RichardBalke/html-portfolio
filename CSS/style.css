@@ -44,30 +44,7 @@ p {
 }
 
 
-@media (max-width: 950px) {
- h2 {
-  font-size: 100px!important;
-}
 
-h3 {
-  font-size: 60px!important;
-}
-
-p {
-  font-size: 20px;
-  text-align: center;
-  margin: 0% 2% 0% 2% !important;
-}
-
-.footer-nav-button {
-  font-size: 4vw;
-}
-
-.brand-name-container {
-  display: none;
-}
-
-}
 
 
   

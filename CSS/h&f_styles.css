@@ -5,6 +5,14 @@
   justify-content: space-evenly;
 }
 
+.hf-container.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -25,6 +33,7 @@
   align-items: center;
   justify-content: center;
   height: auto;
+  background-image: linear-gradient(to right, white, rgb(245, 246, 227));
 }
 
 .footer-nav-button {

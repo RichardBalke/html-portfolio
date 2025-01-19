@@ -20,7 +20,22 @@
 }
 /* Header animatie einde */
 
+@keyframes content-fadein {
+  0% {
+    opacity: 0%;
+  }
 
+  100% {
+    opacity: 100%;
+  }
+}
+
+#title-container.animate,
+#intro-skills-container.animate,
+.main-portfolio-container.animate,
+.content-split.animate {
+  animation: content-fadein 4s linear;
+}
 
 /* Splash screen begin */
 .scroll-img-container {
@@ -96,7 +111,8 @@
   width: 100%;
   margin: auto;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgb(25, 31, 38), rgb(32, 40, 47))
+  background-image: linear-gradient(to bottom, rgb(25, 31, 38), rgb(32, 40, 47));
+  align-items: center;
 }
 
 #title-header2 {
@@ -120,14 +136,25 @@
   font-size: 60px;
 }
 
+#test {
+  color: linear-gradient(to right, white, rgb(245, 246, 227));
+  width: 100vw;
+}
+
 #title-paragraph {
   color: rgb(245, 246, 227);
   margin: 10px 10% 0px 10%;
   text-align: center;
   text-shadow: 0px 1px 1px black;
 }
-/* Intro tekst einde */
 
+#title-container-img {
+  width: 300px;
+  height: auto;
+  border-radius: 50% 20% / 10% 40%;
+  margin: 50px 0px 50px 0px;
+}
+/* Intro tekst einde */
 
 
 /* intro/portfolio/skills */
@@ -203,7 +230,6 @@
 /* intro/portfolio/skills einde */
 
 
-
 /* Portfolio slider begin */
 @keyframes scroll {
   0% {
@@ -233,6 +259,11 @@
   display: flex;
   width: calc(270px * 4);
 }
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
 /* Portfolio slider einde */
 
 
@@ -249,17 +280,35 @@
   #intro-skills-container p {
     margin: 10px 20px;
   }
+
+  h2 {
+    font-size: 100px!important;
+  }
+  
+  h3 {
+    font-size: 60px!important;
+  }
+  
+  p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0% 2% 0% 2% !important;
+  }
+  
+  .footer-nav-button {
+    font-size: 4vw;
+  }
+  
+  .brand-name-container {
+    display: none;
+  }
+  
 }
 
 @media (max-width: 1700px) {
 
 
 }
-
-
-
-
-
 
 
 
