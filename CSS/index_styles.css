@@ -20,7 +20,30 @@
 }
 /* Header animatie einde */
 
-@keyframes content-fadein {
+#all-Content {
+  display: none;
+}
+
+#all-Content.show {
+  transition: opacity 0.5s ease-in-out;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+footer {
+  display: none;
+}
+
+footer.show {
+  transition: opacity 0.5s ease-in-out;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Title screen fade in */
+@keyframes content-Fadein {
   0% {
     opacity: 0%;
   }
@@ -34,8 +57,9 @@
 #intro-skills-container.animate,
 .main-portfolio-container.animate,
 .content-split.animate {
-  animation: content-fadein 4s linear;
+  animation: content-Fadein 4s linear;
 }
+/* Title screen fade in einde */
 
 /* Splash screen begin */
 .scroll-img-container {
@@ -49,10 +73,10 @@
   overflow: hidden;
 }
 
-  .scroll-img {
+.scroll-img {
   width: auto;
   height: 100vh;
-  }
+}
 
 @keyframes slideleft {
   0% {
@@ -93,15 +117,11 @@
 }
 /* Splash screen einde */
 
-
-
 #index-container {
   display: flex;
   flex-direction: column;
   overflow: hidden;
 }
-
-
 
 /* De intro tekst */
 #title-container {
@@ -111,7 +131,11 @@
   width: 100%;
   margin: auto;
   min-height: 100vh;
-  background-image: linear-gradient(to bottom, rgb(25, 31, 38), rgb(32, 40, 47));
+  background-image: linear-gradient(
+    to bottom,
+    rgb(25, 31, 38),
+    rgb(32, 40, 47)
+  );
   align-items: center;
 }
 
@@ -156,7 +180,6 @@
 }
 /* Intro tekst einde */
 
-
 /* intro/portfolio/skills */
 #intro-skills-container {
   display: flex;
@@ -180,7 +203,9 @@
   flex-direction: column;
 }
 
-#introduction-container h3, #portfolio-container h3, #skills-container h3 {
+#introduction-container h3,
+#portfolio-container h3,
+#skills-container h3 {
   color: rgb(25, 31, 38);
   text-align: center;
   font-size: 64px;
@@ -229,7 +254,6 @@
 }
 /* intro/portfolio/skills einde */
 
-
 /* Portfolio slider begin */
 @keyframes scroll {
   0% {
@@ -263,10 +287,7 @@
 .slider:hover .slide-track {
   animation-play-state: paused;
 }
-
 /* Portfolio slider einde */
-
-
 
 @media (max-width: 950px) {
   #intro-skills-container {
@@ -282,33 +303,24 @@
   }
 
   h2 {
-    font-size: 100px!important;
+    font-size: 100px !important;
   }
-  
+
   h3 {
-    font-size: 60px!important;
+    font-size: 60px !important;
   }
-  
+
   p {
     font-size: 20px;
     text-align: center;
     margin: 0% 2% 0% 2% !important;
   }
-  
+
   .footer-nav-button {
     font-size: 4vw;
   }
-  
+
   .brand-name-container {
     display: none;
   }
-  
 }
-
-@media (max-width: 1700px) {
-
-
-}
-
-
-

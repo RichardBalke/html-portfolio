@@ -93,6 +93,10 @@ footer hr {
   width: 33%;
 }
 
+.footer-content p{
+  color: rgb(26, 31, 39) !important;
+}
+
 @media (max-width: 800px) {
   .footer-container {
     flex-direction: column;
