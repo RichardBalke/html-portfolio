@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/style.css" />
     <link rel="stylesheet" href="/CSS/h&f_styles.css" />
-    <link rel="stylesheet" href="/CSS/contact_styles.css">
+    <link rel="stylesheet" href="/CSS/contact_styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap"
       rel="stylesheet"
@@ -20,12 +20,46 @@
     <header></header>
 
     <main>
-      <div>
-        <div>Naam</div>
-        <div>emailadres</div>
-        <div>invulvak</div>
-        <div>verzendknop</div>
 
+      <div id="contact-Form-Container">
+        <div>
+          <h2>Contact formulier</h2>
+        </div>
+        <form action="/php/" method="POST">
+          <div id="form-Input">
+            <label for="Naam">Naam:</label>
+            <input type="text" name="naam" placeholder="Naam" required />
+            <small class="error"></small>
+
+            <label for="Bedrijf">Bedrijf:</label>
+            <input type="text" name="bedrijf" placeholder="Bedrijfsnaam" required />
+            <small class="error"></small>
+
+            <label for="E-mailadres">E-mailadres:</label>
+            <input type="text" name="email" placeholder="voorbeeld@gmail.com" required />
+            <small class="error"></small>
+
+            <label for="Telefoonnummer">Telefoonnummer:</label>
+            <input type="text" name="telefoon" placeholder=" 0612345678" required />
+            <small class="error"></small>
+          </div>
+
+          <div id="form-Message">
+            <label for="bericht-Input">Bericht:</label>
+            <textarea
+              id="bericht-Input"
+              rows="12"
+              style="resize: vertical"
+              name="bericht"
+              required
+            ></textarea>
+            <small class="error"></small>
+          </div>
+
+          <div id="contact-Button-Container">
+            <button type="submit" name="form_button" value="send_data">Verstuur</button>
+          </div>
+        </form>
       </div>
     </main>
 
