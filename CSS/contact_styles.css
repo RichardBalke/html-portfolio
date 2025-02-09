@@ -55,7 +55,7 @@ form textarea:focus {
   justify-content: center;
 }
 
-div button {
+#contact-Button-Container button {
   margin: 20px 0px 20px 0px;
   background-color: rgb(212, 175, 55);
   color: rgb(26, 31, 39);

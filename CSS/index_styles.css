@@ -230,7 +230,7 @@ footer.show {
   flex-direction: column;
   text-align: center;
   font-size: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 79px;
 }
 
 .portfolio-container {
@@ -289,7 +289,7 @@ footer.show {
 }
 /* Portfolio slider einde */
 
-@media (max-width: 950px) {
+@media (max-width: 1001px) {
   #intro-skills-container {
     flex-direction: column;
     text-align: center;
@@ -314,10 +314,6 @@ footer.show {
     font-size: 20px;
     text-align: center;
     margin: 0% 2% 0% 2% !important;
-  }
-
-  .footer-nav-button {
-    font-size: 4vw;
   }
 
   .brand-name-container {
