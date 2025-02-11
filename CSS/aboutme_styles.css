@@ -33,7 +33,7 @@
     color: rgb(26, 31, 39)!important;
 }
 
-.skills-Table-Box {
+.skills-Table-Box-Filled {
     background-image: linear-gradient(to right, rgb(219, 197, 152), rgb(212, 175, 55)) ;
     width: 100px;
     border-radius: 10px;
@@ -88,10 +88,6 @@ tr th {
 }
 
 @media (max-width: 700px) {
-    div {
-        border: 1px red solid;
-    }
-
     #aboutme-Container * {
         max-width: 500px;
         margin: 0% auto 0% auto;
@@ -105,6 +101,10 @@ tr th {
 
     #aboutme-Text-Container {
         width: auto;
+    }
+
+    h1, h2, h3, p {
+        margin: 0px 10px 0px 10px !important;
     }
 
 

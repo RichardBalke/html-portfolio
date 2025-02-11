@@ -4,14 +4,6 @@ body {
   padding: 0;
 }
 
-/* div {
-  border: 3px solid red;
-} */
-
-#header {
-  background-color: rgb(26, 31, 39);
-}
-
 .logo-container {
   display: flex;
   align-items: center;
