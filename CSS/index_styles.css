@@ -18,6 +18,7 @@
   animation: headerdown 2s ease-in-out forwards;
   animation-delay: 4s;
 }
+
 /* Header animatie einde */
 
 #all-Content {
@@ -59,6 +60,7 @@ footer.show {
 .content-split.animate {
   animation: content-Fadein 4s linear;
 }
+
 /* Title screen fade in einde */
 
 /* Splash screen begin */
@@ -68,7 +70,7 @@ footer.show {
   justify-content: center;
   align-items: center;
   width: 100%;
-  z-index: 999;
+  z-index: 998;
   position: absolute;
   overflow: hidden;
 }
@@ -115,6 +117,7 @@ footer.show {
   animation: slideright 5s ease-in-out forwards;
   animation-delay: 1s;
 }
+
 /* Splash screen einde */
 
 #index-container {
@@ -130,12 +133,10 @@ footer.show {
   max-width: 800px;
   width: 100%;
   margin: auto;
-  min-height: 100vh;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(25, 31, 38),
-    rgb(32, 40, 47)
-  );
+  height: 100vh;
+  background-image: linear-gradient(to bottom,
+      rgb(25, 31, 38),
+      rgb(32, 40, 47));
   align-items: center;
 }
 
@@ -144,6 +145,7 @@ footer.show {
   text-align: center;
   text-shadow: 0px 1px 1px black;
   font-size: 130px;
+  z-index: 1;
 }
 
 #title-header2 hr {
@@ -176,8 +178,13 @@ footer.show {
   width: 400px;
   height: auto;
   border-radius: 50% 20% / 10% 40%;
-  margin-top: 50px;
+  position: absolute;
+  z-index: 0;
+  top: 340px;
+  left: 115px;
+
 }
+
 /* Intro tekst einde */
 
 /* intro/portfolio/skills */
@@ -252,6 +259,7 @@ footer.show {
 .portfolio-img-container a {
   text-align: center;
 }
+
 /* intro/portfolio/skills einde */
 
 /* Portfolio slider begin */
@@ -287,6 +295,7 @@ footer.show {
 .slider:hover .slide-track {
   animation-play-state: paused;
 }
+
 /* Portfolio slider einde */
 
 @media (max-width: 1001px) {
