@@ -49,17 +49,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.getElementById("home-button").addEventListener("click", function () {
-  window.location.href = "index.html";
+  window.location.href = "/index.html";
 });
 
 document.getElementById("about-button").addEventListener("click", function () {
-  window.location.href = "about.html";
+  window.location.href = "/about.html";
 });
 
 document
   .getElementById("contact-button")
   .addEventListener("click", function () {
-    window.location.href = "contact.html";
+    window.location.href = "/contact.html";
   });
 
 // Portfolio button in de header-navbar

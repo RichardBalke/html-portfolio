@@ -25,14 +25,14 @@
         <div>
           <h2>Contact formulier</h2>
         </div>
-        <form action="/php/send_email.php" method="POST">
+        <form method="POST">
           <div id="form-Input">
             <label for="Naam">Naam:</label>
             <input type="text" name="naam" placeholder="Naam" required />
             <small class="error"></small>
 
             <label for="Bedrijf">Bedrijf:</label>
-            <input type="text" name="bedrijf" placeholder="Bedrijfsnaam" required />
+            <input type="text" name="bedrijf" placeholder="Bedrijfsnaam" />
             <small class="error"></small>
 
             <label for="E-mailadres">E-mailadres:</label>
@@ -40,7 +40,7 @@
             <small class="error"></small>
 
             <label for="Telefoonnummer">Telefoonnummer:</label>
-            <input type="text" name="telefoon" placeholder="0612345678" required />
+            <input type="text" name="telefoon" placeholder="0612345678"  />
             <small class="error"></small>
           </div>
 
