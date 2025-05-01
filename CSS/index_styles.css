@@ -263,7 +263,7 @@ footer.show {
 /* intro/portfolio/skills einde */
 
 /* Portfolio slider begin */
-@keyframes scroll {
+/* @keyframes scroll {
   0% {
     transform: translateX(0px);
   }
@@ -271,7 +271,7 @@ footer.show {
   100% {
     transform: translateX(calc(-270px * 4));
   }
-}
+} */
 
 .slider {
   position: relative;
@@ -283,7 +283,43 @@ footer.show {
 }
 
 .slideimg {
-  width: 230px;
+  height: 230px;
+}
+
+.img-container {
+  position: relative;
+  display: inline-block;
+}
+
+#portfolio-ashray-img {
+  filter: grayscale(90%);
+  transition: all 0.5s ease;
+  display: block;
+}
+
+#portfolio-ashray-img:hover {
+  filter: grayscale(0%);
+}
+
+/* Message styling */
+.hover-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Show message on hover */
+.img-container:hover .hover-message {
+  opacity: 1;
 }
 
 .slide-track {
@@ -294,6 +330,15 @@ footer.show {
 
 .slider:hover .slide-track {
   animation-play-state: paused;
+}
+
+#portfolio-ashray-img {
+  filter: grayscale(90%);
+}
+
+#portfolio-ashray-img:hover {
+  filter: grayscale(0%);
+  transition: all 0.5s ease;
 }
 
 /* Portfolio slider einde */
