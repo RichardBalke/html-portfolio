@@ -263,7 +263,7 @@ footer.show {
 /* intro/portfolio/skills einde */
 
 /* Portfolio slider begin */
-/* @keyframes scroll {
+@keyframes scroll {
   0% {
     transform: translateX(0px);
   }
@@ -271,7 +271,7 @@ footer.show {
   100% {
     transform: translateX(calc(-270px * 4));
   }
-} */
+}
 
 .slider {
   position: relative;

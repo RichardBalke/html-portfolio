@@ -44,16 +44,16 @@
             </button>
             <button
               class="footer-nav-button"
-              onclick="location.href= 'contact.html'"
+              onclick="location.href= 'contact.php'"
             >
               Contact
             </button>
-            <button
+            <!-- <button
               class="footer-nav-button"
               onclick="location.href= 'boxes.html'"
             >
               Portfolio
-            </button>
+            </button> -->
           </nav>
         </div>
       </div>

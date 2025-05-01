@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.getElementById("home-button").addEventListener("click", function () {
-  window.location.href = "/index.html";
+  window.location.href = "/index.php";
 });
 
 document.getElementById("about-button").addEventListener("click", function () {
@@ -59,7 +59,7 @@ document.getElementById("about-button").addEventListener("click", function () {
 document
   .getElementById("contact-button")
   .addEventListener("click", function () {
-    window.location.href = "/contact.html";
+    window.location.href = "/contact.php";
   });
 
 // Portfolio button in de header-navbar

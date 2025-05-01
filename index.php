@@ -23,7 +23,7 @@
   <header>
     <div class="hf-container">
       <div class="logo-container">
-        <a href="/index.html"><img src="/Images/website_icon1.png" alt /></a>
+        <a href="/index.php"><img src="/Images/website_icon1.png" alt /></a>
       </div>
       <div class="brand-name-container"></div>
       <div class="nav-container">
@@ -65,7 +65,7 @@
           Ik ben Richard Balke, een gepassioneerde front-end developer met oog voor design en gebruiksvriendelijkheid
         </p>
 
-        <button style="z-index: 999;" onclick="window.location.href='index.html#all-Content'">Mijn werk</button>
+        <button style="z-index: 999;" onclick="window.location.href='index.php#all-Content'">Mijn werk</button>
       </div>
 
       <div id="all-Content">
@@ -182,10 +182,13 @@
                     alt /></a>
               </div>
               <div class="slide">
-                <img
-                  class="slideimg" id="portfolio-ashray-img"
-                  src="/Images/index_Foto_Ashray.png"
-                  alt />
+                <div class="img-container">
+                  <img
+                    class="slideimg" id="portfolio-ashray-img"
+                    src="/Images/index_Foto_Ashray.png"
+                    alt />
+                  <div class="hover-message">Work in progress</div>
+                </div>
               </div>
               <div class="slide">
                 <img
@@ -266,10 +269,13 @@
                   alt />
               </div>
               <div class="slide">
-                <img
-                  class="slideimg" id="portfolio-ashray-img"
-                  src="/Images/index_Foto_Ashray.png"
-                  alt />
+                <div class="img-container">
+                  <img
+                    class="slideimg" id="portfolio-ashray-img"
+                    src="/Images/index_Foto_Ashray.png"
+                    alt />
+                  <div class="hover-message">Work in progress</div>
+                </div>
               </div>
               <div class="slide">
                 <img
