@@ -10,8 +10,6 @@
 
   <title>Richard Balke - Junior Web Developer</title>
   <link rel="stylesheet" href="/CSS/style.css" />
-  <link rel="stylesheet" href="/CSS/index_styles.css" />
-  <link rel="stylesheet" href="/CSS/h&f_styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
 
   <link
@@ -61,27 +59,14 @@
           Developer
         </h3>
         <p id="title-paragraph">
-
-          Ik ben Richard Balke, een gepassioneerde front-end developer met oog voor design en gebruiksvriendelijkheid
+          Ik ben Richard Balke, een gepassioneerde full-stack developer met oog voor design en gebruiksvriendelijkheid. Mijn doel is om innovatieve en efficiënte oplossingen te creëren die zowel functioneel als visueel aantrekkelijk zijn. Met mijn sterke focus op gebruikerservaring en moderne technologieën streef ik ernaar om projecten naar een hoger niveau te tillen!
         </p>
 
-        <button style="z-index: 999;" onclick="window.location.href='index.php#all-Content'">Mijn werk</button>
+        <button class="button-layout" style="z-index: 999;" onclick="window.location.href='index.php#all-Content'">Mijn werk</button>
       </div>
 
       <div id="all-Content">
         <div id="intro-skills-container">
-          <div id="introduction-container">
-            <h3>Introductie</h3>
-            <p>
-              Welkom! Mijn naam is Richard Balke, een Junior Web Developer met een
-              passie voor het creëren van dynamische en gebruiksvriendelijke
-              websites. Met mijn achtergrond in onderwijs en sport, breng ik een
-              unieke mix van creativiteit, discipline en probleemoplossend
-              vermogen naar de wereld van informatica. Ik ben gedreven door mijn
-              liefde voor leren en mijn passie voor technologie. Bekijk mijn
-              portfolio en zie hoe ik ideëen transformeer tot realiteit!
-            </p>
-          </div>
           <div id="skills-container">
             <h3>Skills</h3>
             <svg class="chart" viewBox="-50 -40 300 300">
@@ -145,158 +130,204 @@
               </text>
             </svg>
           </div>
-          <div id="portfolio-container">
-            <h3>Portfolio</h3>
-            <p>
-              In mijn portfolio vind je een verzameling van de projecten
-              waaraan ik heb gewerkt, variërend van eenvoudige websites tot
-              meer geavanceerde toepassingen. Elk project weerspiegelt mijn
-              vaardigheden in HTML, CSS, JavaScript en andere talen. Ik ben
-              trots op mijn vermogen om creatieve oplossingen te bieden voor
-              de uitdagingen van klanten en gebruikers. Bekijk mijn werk en
-              neem contact op als je geïnteresseerd bent in samenwerking!
-            </p>
-          </div>
-        </div>
-
-        <div class="main-portfolio-container">
-          <div>
-            <h3>Mijn Portfolio</h3>
-          </div>
-          <div class="slider">
-            <div class="slide-track">
-              <div class="slide">
-                <a
-                  href="https://fittingly-php.azurewebsites.net"
-                  target="_blank"><img
-                    class="slideimg"
-                    src="/Images/logo_fittingly_light.png"
-                    alt /></a>
-              </div>
-              <div class="slide">
-                <a href="/Pixel_Rampage/pixel_rampage.html"
-                  target="_blank">
-                  <img
-                    class="slideimg"
-                    src="/Images/Pixel_Rampage_Logo2.png"
-                    alt /></a>
-              </div>
-              <div class="slide">
-                <div class="img-container">
-                  <img
-                    class="slideimg" id="portfolio-ashray-img"
-                    src="/Images/index_Foto_Ashray.png"
-                    alt />
-                  <div class="hover-message">Work in progress</div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  class="slideimg"
-                  src="/Images/poc-filler-image.jpeg"
-                  alt />
-              </div>
-
-              <!--Duplicate images-->
-              <div class="slide">
-                <a
-                  href="https://fittingly-php.azurewebsites.net"
-                  target="_blank"><img
-                    class="slideimg"
-                    src="/Images/logo_fittingly_light.png"
-                    alt /></a>
-              </div>
-              <div class="slide">
-                <img
-                  class="slideimg"
-                  src="/Images/Pixel_Rampage_Logo2.png"
-                  alt />
-              </div>
-              <div class="slide">
-                <div class="img-container">
-                  <img
-                    class="slideimg" id="portfolio-ashray-img"
-                    src="/Images/index_Foto_Ashray.png"
-                    alt />
-                  <div class="hover-message">Work in progress</div>
-                </div>
-              </div>
-
-              <div class="slide">
-                <img
-                  class="slideimg"
-                  src="/Images/poc-filler-image.jpeg"
-                  alt />
-              </div>
-              <div class="slide">
-                <a
-                  href="https://fittingly-php.azurewebsites.net"
-                  target="_blank"><img
-                    class="slideimg"
-                    src="/Images/logo_fittingly_light.png"
-                    alt /></a>
-              </div>
-              <div class="slide">
-                <img
-                  class="slideimg"
-                  src="/Images/Pixel_Rampage_Logo2.png"
-                  alt />
-              </div>
-              <div class="slide">
-                <img
-                  class="slideimg" id="portfolio-ashray-imgh"
-                  src="/Images/index_Foto_Ashray.png"
-                  alt />
-              </div>
-              <div class="slide">
-                <img
-                  class="slideimg"
-                  src="/Images/poc-filler-image.jpeg"
-                  alt />
-              </div>
-              <div class="slide">
-                <a
-                  href="/https://fittingly-php.azurewebsites.net"
-                  target="_blank"><img
-                    class="slideimg"
-                    src="/Images/logo_fittingly_light.png"
-                    alt /></a>
-              </div>
-              <div class="slide">
-                <img
-                  class="slideimg"
-                  src="/Images/Pixel_Rampage_Logo2.png"
-                  alt />
-              </div>
-              <div class="slide">
-                <div class="img-container">
-                  <img
-                    class="slideimg" id="portfolio-ashray-img"
-                    src="/Images/index_Foto_Ashray.png"
-                    alt />
-                  <div class="hover-message">Work in progress</div>
-                </div>
-              </div>
-              <div class="slide">
-                <img
-                  class="slideimg"
-                  src="/Images/poc-filler-image.jpeg"
-                  alt />
-              </div>
+          <div id="skills-text-container">
+            <div class="skills-text">
+              <h4>Problem Solving</h4>
+              <p>
+                Ik ben een probleemoplosser die altijd op zoek is naar de beste oplossing voor elk probleem. Ik ben in staat om snel en effectief te reageren op uitdagingen en ik ben niet bang om nieuwe dingen uit te proberen.
+              </p>
+            </div>
+            <div class="skills-text">
+              <h4>Autonomie</h4>
+              <p>
+                Ik ben in staat om zelfstandig te werken en mijn eigen beslissingen te nemen. Ik heb de discipline en motivatie om mijn werk op tijd af te krijgen zonder dat iemand me hoeft te controleren.
+              </p>
+            </div>
+            <div class="skills-text">
+              <h4>Leergierigheid</h4>
+              <p>
+                Ik ben altijd op zoek naar manieren om mijn vaardigheden en kennis uit te breiden. Ik ben bereid om nieuwe technologieën en tools te leren en ik ben niet bang om buiten mijn comfortzone te treden.
+              </p>
+            </div>
+            <div class="skills-text">
+              <h4>Communicatie</h4>
+              <p>
+                Ik ben in staat om effectief te communiceren met zowel technische als niet-technische mensen. Ik kan complexe ideeën eenvoudig uitleggen en ik ben altijd bereid om naar anderen te luisteren.
+              </p>
+            </div>
+            <div class="skills-text">
+              <h4>Aanpassingsvermogen</h4>
+              <p>
+                Ik kan me snel aanpassen aan veranderingen in de omgeving of het project. Dit stelt me in staat om flexibel te blijven en effectief samen te werken met anderen, ongeacht hun achtergrond of ervaring.
+              </p>
             </div>
           </div>
 
-          <!--Duplicate images end-->
         </div>
       </div>
+
+      <div class="main-portfolio-container">
+        <div>
+          <h3>Projecten</h3>
+        </div>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <a
+                href="https://fittingly-php.azurewebsites.net"
+                target="_blank"><img
+                  class="slideimg"
+                  src="/Images/logo_fittingly_light.png"
+                  alt /></a>
+            </div>
+            <div class="slide">
+              <div class="img-container">
+                <img
+                  class="slideimg"
+                  src="/Images/Pixel_Rampage_Logo2.png"
+                  alt /></a>
+                <div class="hover-message">Work in progress</div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="img-container">
+                <img
+                  class="slideimg" id="portfolio-ashray-img"
+                  src="/Images/index_Foto_Ashray.png"
+                  alt />
+                <div class="hover-message">Work in progress</div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                class="slideimg"
+                src="/Images/poc-filler-image.jpeg"
+                alt />
+            </div>
+
+            <!--Duplicate images-->
+            <div class="slide">
+              <a
+                href="https://fittingly-php.azurewebsites.net"
+                target="_blank"><img
+                  class="slideimg"
+                  src="/Images/logo_fittingly_light.png"
+                  alt /></a>
+            </div>
+
+            <div class="slide">
+              <div class="img-container">
+                <img
+                  class="slideimg"
+                  src="/Images/Pixel_Rampage_Logo2.png"
+                  alt /></a>
+                <div class="hover-message">Work in progress</div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="img-container">
+                <img
+                  class="slideimg" id="portfolio-ashray-img"
+                  src="/Images/index_Foto_Ashray.png"
+                  alt />
+                <div class="hover-message">Work in progress</div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                class="slideimg"
+                src="/Images/poc-filler-image.jpeg"
+                alt />
+            </div>
+
+            <div class="slide">
+              <a
+                href="https://fittingly-php.azurewebsites.net"
+                target="_blank"><img
+                  class="slideimg"
+                  src="/Images/logo_fittingly_light.png"
+                  alt /></a>
+            </div>
+
+            <div class="slide">
+              <div class="img-container">
+                <img
+                  class="slideimg"
+                  src="/Images/Pixel_Rampage_Logo2.png"
+                  alt /></a>
+                <div class="hover-message">Work in progress</div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="img-container">
+                <img
+                  class="slideimg" id="portfolio-ashray-img"
+                  src="/Images/index_Foto_Ashray.png"
+                  alt />
+                <div class="hover-message">Work in progress</div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                class="slideimg"
+                src="/Images/poc-filler-image.jpeg"
+                alt />
+            </div>
+
+            <div class="slide">
+              <a
+                href="/https://fittingly-php.azurewebsites.net"
+                target="_blank"><img
+                  class="slideimg"
+                  src="/Images/logo_fittingly_light.png"
+                  alt /></a>
+            </div>
+
+            <div class="slide">
+              <div class="img-container">
+                <img
+                  class="slideimg"
+                  src="/Images/Pixel_Rampage_Logo2.png"
+                  alt /></a>
+                <div class="hover-message">Work in progress</div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="img-container">
+                <img
+                  class="slideimg" id="portfolio-ashray-img"
+                  src="/Images/index_Foto_Ashray.png"
+                  alt />
+                <div class="hover-message">Work in progress</div>
+              </div>
+            </div>
+
+            <div class="slide">
+              <img
+                class="slideimg"
+                src="/Images/poc-filler-image.jpeg"
+                alt />
+            </div>
+          </div>
+        </div>
+
+        <!--Duplicate images end-->
+      </div>
+    </div>
     </div>
   </main>
 
-  <footer></footer>
+  <footer>
+    <?php include 'footer.php'; ?>
+  </footer>
+
   <script src="/JavaScript/script.js"></script>
-  <script>
-    includeHTML("footer.php", "footer");
-  </script>
+
 </body>
 
 </html>
