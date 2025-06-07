@@ -1,3 +1,10 @@
+<?php
+require_once __DIR__ . '/translations/translator.php';
+$translator = init_translator();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -9,6 +16,7 @@
     content="Showcasing my skills as a junior web developer." />
 
   <title>Richard Balke - Junior Web Developer</title>
+  <link rel="stylesheet" href="/CSS/index_styles.css" />
   <link rel="stylesheet" href="/CSS/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
 
@@ -27,7 +35,7 @@
       <div class="nav-container">
         <nav>
           <button class="nav-button" id="home-button">Home</button>
-          <button class="nav-button" id="about-button">Mijn CV</button>
+          <button class="nav-button" id="about-button"><?= $translator->get('nav-bar2') ?></button>
           <button class="nav-button" id="contact-button">Contact</button>
           <!-- <button class="nav-button" id="portfolio-button">Portfolio</button> -->
         </nav>
@@ -58,9 +66,7 @@
           Junior <br> Web
           Developer
         </h3>
-        <p id="title-paragraph">
-          Ik ben Richard Balke, een gepassioneerde full-stack developer met oog voor design en gebruiksvriendelijkheid. Mijn doel is om innovatieve en efficiënte oplossingen te creëren die zowel functioneel als visueel aantrekkelijk zijn. Met mijn sterke focus op gebruikerservaring en moderne technologieën streef ik ernaar om projecten naar een hoger niveau te tillen!
-        </p>
+        <p id="title-paragraph"><?= $translator->get('title-paragraph') ?></p>
 
         <button class="button-layout" style="z-index: 999;" onclick="window.location.href='index.php#all-Content'">Mijn werk</button>
       </div>
@@ -120,10 +126,10 @@
                 stroke-width="1" />
 
               <!-- Labels -->
-              <text class="chart-text" x="100" y="10">Problem Solving</text>
-              <text class="chart-text" x="200" y="65">Autonomie</text>
-              <text class="chart-text" x="145" y="190">Leergierigheid</text>
-              <text class="chart-text" x="45" y="190">Communicatie</text>
+              <text class="chart-text" x="100" y="10"><?= $translator->get('chart-text1') ?></text>
+              <text class="chart-text" x="200" y="65"><?= $translator->get('chart-text2') ?></text>
+              <text class="chart-text" x="145" y="190"><?= $translator->get('chart-text3') ?></text>
+              <text class="chart-text" x="45" y="190"><?= $translator->get('chart-text4') ?></text>
               <text class="chart-text" x="-5" y="60" text-anchor="start">
                 <tspan x="0" dy="0">Aanpassings</tspan>
                 <tspan x="-3" dy="1.2em">vermogen</tspan>

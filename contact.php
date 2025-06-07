@@ -1,3 +1,8 @@
+<?php
+require_once __DIR__ . '/translations/translator.php';
+$translator = init_translator();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
