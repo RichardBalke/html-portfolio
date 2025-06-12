@@ -131,38 +131,38 @@ $translator = init_translator();
               <text class="chart-text" x="145" y="190"><?= $translator->get('chart-text3') ?></text>
               <text class="chart-text" x="45" y="190"><?= $translator->get('chart-text4') ?></text>
               <text class="chart-text" x="-5" y="60" text-anchor="start">
-                <tspan x="0" dy="0">Aanpassings</tspan>
-                <tspan x="-3" dy="1.2em">vermogen</tspan>
+                <tspan x="0" dy="0"><?= $translator ->get('chart-text5-1') ?></tspan>
+                <tspan x="-3" dy="1.2em"><?= $translator ->get('chart-text5-2') ?></tspan>
               </text>
             </svg>
           </div>
           <div id="skills-text-container">
             <div class="skills-text">
-              <h4>Problem Solving</h4>
+              <h4><?= $translator->get('chart-text1') ?></h4>
               <p>
                 Ik ben een probleemoplosser die altijd op zoek is naar de beste oplossing voor elk probleem. Ik ben in staat om snel en effectief te reageren op uitdagingen en ik ben niet bang om nieuwe dingen uit te proberen.
               </p>
             </div>
             <div class="skills-text">
-              <h4>Autonomie</h4>
+              <h4><?= $translator->get('chart-text2') ?></h4>
               <p>
                 Ik ben in staat om zelfstandig te werken en mijn eigen beslissingen te nemen. Ik heb de discipline en motivatie om mijn werk op tijd af te krijgen zonder dat iemand me hoeft te controleren.
               </p>
             </div>
             <div class="skills-text">
-              <h4>Leergierigheid</h4>
+              <h4><?= $translator->get('chart-text3') ?></h4>
               <p>
                 Ik ben altijd op zoek naar manieren om mijn vaardigheden en kennis uit te breiden. Ik ben bereid om nieuwe technologieën en tools te leren en ik ben niet bang om buiten mijn comfortzone te treden.
               </p>
             </div>
             <div class="skills-text">
-              <h4>Communicatie</h4>
+              <h4><?= $translator->get('chart-text4') ?></h4>
               <p>
                 Ik ben in staat om effectief te communiceren met zowel technische als niet-technische mensen. Ik kan complexe ideeën eenvoudig uitleggen en ik ben altijd bereid om naar anderen te luisteren.
               </p>
             </div>
             <div class="skills-text">
-              <h4>Aanpassingsvermogen</h4>
+              <h4><?= $translator->get('chart-text5') ?></h4>
               <p>
                 Ik kan me snel aanpassen aan veranderingen in de omgeving of het project. Dit stelt me in staat om flexibel te blijven en effectief samen te werken met anderen, ongeacht hun achtergrond of ervaring.
               </p>

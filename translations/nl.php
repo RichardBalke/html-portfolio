@@ -11,5 +11,8 @@ return [
     'chart-text2' => 'Autonomie',
     'chart-text3' => 'Leergierigheid',
     'chart-text4' => 'Communicatie',
+    'chart-text5' => 'Aanpassingsvermogen',
+    'chart-text5-1' => 'Aanpassings',
+    'chart-text5-2' => 'vermogen',
 
 ];

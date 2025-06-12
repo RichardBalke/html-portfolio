@@ -11,4 +11,7 @@ return [
     'chart-text2' => 'Autonomy',
     'chart-text3' => 'Eagerness to learn',
     'chart-text4' => 'Communication',
+    'chart-text5' => 'Adaptability',
+    'chart-text5-1' => 'Adaptability',
+    'chart-text5-2' => '',
 ];
