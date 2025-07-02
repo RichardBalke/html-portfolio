@@ -16,7 +16,7 @@ $translator = init_translator();
     content="Showcasing my skills as a junior web developer." />
 
   <title>Richard Balke - Junior Web Developer</title>
-  <link rel="stylesheet" href="/CSS/index_styles.css" />
+  <link rel="stylesheet" href="/CSS/index.css" />
   <link rel="stylesheet" href="/CSS/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
 
@@ -34,9 +34,9 @@ $translator = init_translator();
       <div class="brand-name-container"></div>
       <div class="nav-container">
         <nav>
-          <button class="nav-button" id="home-button">Home</button>
-          <button class="nav-button" id="about-button"><?= $translator->get('nav-bar2') ?></button>
-          <button class="nav-button" id="contact-button">Contact</button>
+          <button class="nav-button" id="home-button" onclick="window.location.href='index.php'">Home</button>
+          <button class="nav-button" id="about-button" onclick="window.location.href='about.html'"><?= $translator->get('nav-bar2') ?></button>
+          <button class="nav-button" id="contact-button" onclick="window.location.href='contact.php'">Contact</button>
           <!-- <button class="nav-button" id="portfolio-button">Portfolio</button> -->
         </nav>
       </div>
@@ -60,21 +60,22 @@ $translator = init_translator();
       <div id="title-container">
         <h2 id="title-header2">
           Richard <br />Balke
-          <hr />
         </h2>
+        <hr id="title-header-hr" />
         <h3 id="title-header3">
           Junior <br> Web
           Developer
         </h3>
         <p id="title-paragraph"><?= $translator->get('title-paragraph') ?></p>
 
-        <button class="button-layout" style="z-index: 999;" onclick="window.location.href='index.php#all-Content'">Mijn werk</button>
+        <button class="button" style="z-index: 999;" onclick="window.location.href='index.php#all-Content'">Mijn werk</button>
       </div>
 
       <div id="all-Content">
         <div id="intro-skills-container">
           <div id="skills-container">
             <h3>Skills</h3>
+            <button class="button" id="skills_text_show">Click me</button>
             <svg class="chart" viewBox="-50 -40 300 300">
               <!-- Radar chart background -->
               <polygon
@@ -131,8 +132,8 @@ $translator = init_translator();
               <text class="chart-text" x="145" y="190"><?= $translator->get('chart-text3') ?></text>
               <text class="chart-text" x="45" y="190"><?= $translator->get('chart-text4') ?></text>
               <text class="chart-text" x="-5" y="60" text-anchor="start">
-                <tspan x="0" dy="0"><?= $translator ->get('chart-text5-1') ?></tspan>
-                <tspan x="-3" dy="1.2em"><?= $translator ->get('chart-text5-2') ?></tspan>
+                <tspan x="0" dy="0"><?= $translator->get('chart-text5-1') ?></tspan>
+                <tspan x="-3" dy="1.2em"><?= $translator->get('chart-text5-2') ?></tspan>
               </text>
             </svg>
           </div>

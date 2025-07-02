@@ -1,7 +1,51 @@
 :root {
-  --heading-colour: rgb(212, 175, 55);
-  --paragraph-colour: rgb(10, 15, 13);
-  --background-colour: rgb(32, 42, 50);
+/* Background and Color Variables */
+  --primary-color: #2563eb;
+  --secondary-color: #f59e0b;
+  --accent-color: #10b981; 
+  --dark-bg: #0f172a;
+  --medium-bg: #1e293b; 
+  --light-bg: #f8fafc; 
+  --text-primary-dark: #0f172a;
+  --text-secondary-dark: #64748b;
+  --text-light: #f8fafc;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+
+  /* Legacy support - gradually replace these */
+  --heading1-colour: var(--secondary-color);
+  --heading2-colour: var(--text-light);
+  --heading3-colour: var(--text-light);
+  --heading4-colour: var(--text-light);
+  --paragraph-dark-colour: var(--text-primary);
+  --paragraph-light-colour: var(--text-light);
+  --paragraph-text-align: center;
+  --paragraph-text-shadow: 0px 1px 1px black;
+  --background-colour: var(--dark-bg);
+
+  /* Button styling */
+  --button-background-color: var(--secondary-color);
+  --button-margin: 20px;
+  --button-color: var(--text-primary);
+  --button-font-size: 16px;
+  --button-width: 200px;
+  --button-height: 40px;
+  --button-cursor: pointer;
+  --button-border: none;
+  --button-border-radius: 10px;
+
+  /* Form styling */
+  --form-display: flex;
+  --form-flex-direction: column;
+  --form-max-width: 800px;
+  --form-margin: auto;
+  --form-bg-direction: 135deg;
+  --form-bg-start: var(--dark-bg);
+  --form-bg-end: var(--medium-bg);
 }
 
 body {
@@ -23,15 +67,17 @@ h5,
 nav,
 table * {
   font-family: "Averia Sans Libre", sans-serif;
-  color: var(--heading-colour) !important;
-  font-weight: 400;
+  color: var(--heading1-colour) !important;
+  font-weight: 600;
+  line-height: 1.3;
 }
 
 p {
   font-family: "Lora", serif;
   color: var(--paragraph-colour);
-  padding: 10px;
   font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
 }
 
 div {
@@ -41,13 +87,13 @@ div {
 /* Header and Footer styling */
 .hf-container {
   display: flex;
-  background-image: linear-gradient(
-    to bottom,
-    rgb(32, 42, 50),
-    rgb(25, 31, 38)
-  );
-  height: 100px;
-  justify-content: space-evenly;
+  background: linear-gradient(135deg, var(--dark-bg), var(--medium-bg));
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-md);
 }
 
 .hf-container.sticky {
@@ -56,6 +102,8 @@ div {
   left: 0;
   right: 0;
   z-index: 1000;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(20px);
 }
 
 .nav-container {
@@ -68,8 +116,11 @@ div {
   background: none;
   border: none;
   cursor: pointer;
-  color: rgb(245, 246, 227);
-  font-size: 18px;
+  color: var(--text-light);
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: var(--radius-button);
+  position: relative;
 }
 
 .footer-container {
@@ -157,28 +208,37 @@ footer hr {
   }
 }
 
-/* Contact page styles */
-#contact-Form-Container {
-  display: flex;
-  flex-direction: column;
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  background-color: rgba(11, 10, 10, 0.31);
+/* Index page styles */
+#title-paragraph {
+  color: var(--paragraph-light-colour);
+  margin: 10px 10% 0px 10%;
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
 }
 
-#contact-Form-Container div h2,
-#contact-Form-Container div p {
-  margin: 20px 40px 0px 30px;
+/* About page styles */
+#aboutme-Text-Container p {
+  color: var(--paragraph-light-colour);
+  margin-right: 30px;
+}
+
+/* Contact page styles */
+#contact-Form-Container {
+  display: var(--form-display);
+  flex-direction: var(--form-flex-direction);
+  max-width: var(--form-max-width);
+  margin: var(--form-margin);
+  margin-bottom: var(--form-margin-bottom);
+  margin-top: var(--form-margin-top);
 }
 
 #contact-Form-Container div p {
   color: rgb(245, 246, 227);
 }
 
-form {
+.form {
   width: 100%;
+  background: linear-gradient(var(--form-bg-direction), var(--form-bg-start), var(--form-bg-end));
 }
 
 #form-Input input {
@@ -220,137 +280,25 @@ form textarea:focus {
   justify-content: center;
 }
 
-.button-layout {
-  margin: 20px 0px 20px 0px;
-  background-color: rgb(212, 175, 55);
-  color: rgb(26, 31, 39);
-  font-size: 16px;
-  width: 200px;
-  height: 40px;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
+.button {
+  margin: var(--button-margin);
+  background: linear-gradient(135deg, var(--button-background-color), #d97706);
+  color: var(--button-color);
+  font-size: var(--button-font-size);
+  font-weight: 600;
+  width: var(--button-width);
+  height: var(--button-height);
+  cursor: var(--button-cursor);
+  border: var(--button-border);
+  border-radius: var(--button-border-radius);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
 }
 
-/* About me page styles */
-#aboutme-Container {
-  max-width: 1080px;
-  justify-content: center;
-  margin: auto;
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  background: linear-gradient(135deg, #d97706, var(--button-background-color));
 }
 
-.aboutme-Content-Container {
-  display: flex;
-  flex-direction: row;
-  background: linear-gradient(45deg, rgb(2, 4, 9), rgb(37, 50, 100));
-}
-
-#aboutme-Img {
-  height: auto;
-  width: 220px;
-  margin-bottom: -4px;
-}
-
-#aboutme-Text-Container {
-  width: 840px;
-}
-
-#aboutme-Text-Container p {
-  color: rgb(245, 246, 227) !important;
-  margin-right: 30px;
-}
-
-.personalia-Container *,
-td {
-  color: rgb(245, 246, 227);
-}
-
-.vaardigheden-Container * {
-  color: rgb(26, 31, 39) !important;
-}
-
-.skills-Table-Box-Filled {
-  background-image: linear-gradient(
-    to right,
-    rgb(219, 197, 152),
-    rgb(212, 175, 55)
-  );
-  width: 100px;
-  border-radius: 10px;
-}
-
-.skills-Table-Box-Empty {
-  background-color: grey;
-  opacity: 30%;
-  width: 100px;
-  border-radius: 10px;
-}
-
-#info-Container {
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-}
-
-.personalia-Container {
-  width: 100%;
-  border-right: 2px solid rgb(245, 246, 227);
-  background-color: rgba(11, 10, 10, 0.31);
-  padding: 10px 0px;
-}
-
-.vaardigheden-Container {
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(to right, white, rgb(245, 246, 227));
-}
-
-h2,
-h3,
-p,
-table {
-  margin: 10px 20px 0px 20px;
-}
-
-td hr {
-  width: 90px;
-  height: 3px;
-  background-color: rgb(26, 31, 39);
-}
-
-.aboutme-Content p span {
-  background-color: rgb(212, 175, 55);
-  color: rgb(245, 246, 227) !important;
-}
-.aboutme-Content p i {
-  color: rgb(212, 175, 55) !important;
-}
-
-tr th {
-  font-size: 20px;
-}
-
-@media (max-width: 700px) {
-  #aboutme-Container * {
-    max-width: 500px;
-    margin: 0% auto 0% auto;
-  }
-
-  .aboutme-Content-Container,
-  #info-Container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-
-  #aboutme-Text-Container {
-    width: auto;
-  }
-
-  h1,
-  h2,
-  h3,
-  p {
-    margin: 0px 10px 0px 10px !important;
-  }
-}

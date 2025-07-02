@@ -1,0 +1,122 @@
+/* About me page styles */
+#aboutme-Container {
+  max-width: 1080px;
+  justify-content: center;
+  margin: auto;
+}
+
+.aboutme-Content-Container {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(45deg, rgb(2, 4, 9), rgb(37, 50, 100));
+}
+
+#aboutme-Img {
+  height: auto;
+  width: 220px;
+  margin-bottom: -4px;
+}
+
+#aboutme-Text-Container {
+  width: 840px;
+}
+
+#aboutme-Text-Container p {
+  color: rgb(245, 246, 227) !important;
+  margin-right: 30px;
+}
+
+.personalia-Container *,
+td {
+  color: rgb(245, 246, 227);
+}
+
+.vaardigheden-Container * {
+  color: rgb(26, 31, 39) !important;
+}
+
+.skills-Table-Box-Filled {
+  background-image: linear-gradient(
+    to right,
+    rgb(219, 197, 152),
+    rgb(212, 175, 55)
+  );
+  width: 100px;
+  border-radius: 10px;
+}
+
+.skills-Table-Box-Empty {
+  background-color: grey;
+  opacity: 30%;
+  width: 100px;
+  border-radius: 10px;
+}
+
+#info-Container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.personalia-Container {
+  width: 100%;
+  border-right: 2px solid rgb(245, 246, 227);
+  background-color: rgba(11, 10, 10, 0.31);
+  padding: 10px 0px;
+}
+
+.vaardigheden-Container {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to right, white, rgb(245, 246, 227));
+}
+
+h2,
+h3,
+p,
+table {
+  margin: 10px 20px 0px 20px;
+}
+
+td hr {
+  width: 90px;
+  height: 3px;
+  background-color: rgb(26, 31, 39);
+}
+
+.aboutme-Content p span {
+  background-color: rgb(212, 175, 55);
+  color: rgb(245, 246, 227) !important;
+}
+.aboutme-Content p i {
+  color: rgb(212, 175, 55) !important;
+}
+
+tr th {
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  #aboutme-Container * {
+    max-width: 500px;
+    margin: 0% auto 0% auto;
+  }
+
+  .aboutme-Content-Container,
+  #info-Container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  #aboutme-Text-Container {
+    width: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0px 10px 0px 10px !important;
+  }
+}

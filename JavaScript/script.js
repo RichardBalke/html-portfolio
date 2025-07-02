@@ -48,19 +48,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-document.getElementById("home-button").addEventListener("click", function () {
-  window.location.href = "/index.php";
-});
-
-document.getElementById("about-button").addEventListener("click", function () {
-  window.location.href = "/about.html";
-});
-
 document
-  .getElementById("contact-button")
-  .addEventListener("click", function () {
-    window.location.href = "/contact.php";
-  });
+.getElementById("skills_text_show")
+.addEventListener("click", function () {
+  const skillsTextContainer = document.querySelector("#skills-text-container");
+  const skillsButton = document.querySelector("#skills_text_show");
+  skillsTextContainer.classList.add("show");
+  skillsButton.classList.add("hide");
+});
 
 // Portfolio button in de header-navbar
 // document

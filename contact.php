@@ -30,7 +30,7 @@ $translator = init_translator();
         <h2>Contact formulier</h2>
         <p id="form-paragraph">Vul het formulier in en ik neem zo snel mogelijk contact met je op.</p>
       </div>
-      <form method="POST" action="/Email_handler/send_email.php" id="contact-Form">
+      <form class="form" method="POST" action="/Email_handler/send_email.php" id="contact-Form">
 
         <div id="form-Input">
           <label for="Naam">Naam:</label>
@@ -62,7 +62,7 @@ $translator = init_translator();
         </div>
 
         <div id="contact-Button-Container">
-          <button class="button-layout" type="submit" name="form_button" value="send_data">Verstuur</button>
+          <button class="button" type="submit" name="form_button" value="send_data">Verstuur</button>
         </div>
       </form>
     </div>
