@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const imgRight = document.querySelector(".scroll-img-container-right");
   const headerShow = document.querySelector(".hf-container");
   const titleContentFadeIn = document.querySelector("#title-container");
-  // const allContent = document.querySelector("#all-Content");
+  const allContent = document.querySelector("#all-Content");
   const footerShow = document.querySelector("footer");
 
   // If not shown, add the animate class and set the session flag
@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     imgRight.classList.add("animate");
     headerShow.classList.add("animate");
     titleContentFadeIn.classList.add("animate");
-    // allContent.classList.add("show");
-    footerShow.classList.add("show");
+    allContent.classList.add("animate");
+    footerShow.classList.add("animate");
 
     // Mark the animation as shown in sessionStorage
     sessionStorage.setItem("introAnimationShown", "true");
@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     imgLeft.style.transform = "translateX(-400px)";
     imgRight.style.transform = "translateX(400px)";
     headerShow.style.transform = "translatey(0px)";
-    // allContent.style.display = "block";
-    // footerShow.style.display = "block";
+    allContent.style.display = "block";
+    footerShow.style.display = "block";
   }
 
   if (window.matchMedia("(max-width: 800px)").matches) {
@@ -48,14 +48,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-document
-.getElementById("skills_text_show")
-.addEventListener("click", function () {
-  const skillsTextContainer = document.querySelector("#skills-text-container");
-  const skillsButton = document.querySelector("#skills_text_show");
-  skillsTextContainer.classList.add("show");
-  skillsButton.classList.add("hide");
+document.getElementById("home-button").addEventListener("click", function () {
+  window.location.href = "index.html";
 });
+
+document.getElementById("about-button").addEventListener("click", function () {
+  window.location.href = "about.html";
+});
+
+document
+  .getElementById("contact-button")
+  .addEventListener("click", function () {
+    window.location.href = "contact.html";
+  });
 
 // Portfolio button in de header-navbar
 // document
