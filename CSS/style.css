@@ -1,15 +1,27 @@
 :root {
 /* Background and Color Variables */
-  --primary-color: #2563eb;
-  --secondary-color: #f59e0b;
+  --primary-color: #0f172a;
+  --secondary-color: rgb(212, 175, 55); /* #f59e0b */
+  --light-gradient: linear-gradient(to right, white, rgb(245, 246, 227));
   --accent-color: #10b981; 
-  --dark-bg: #0f172a;
+  --dark-bg: #0f172a; /* moet primary color worden */
   --medium-bg: #1e293b; 
   --light-bg: #f8fafc; 
   --text-primary-dark: #0f172a;
   --text-secondary-dark: #64748b;
-  --text-light: #f8fafc;
-  
+  --text-primary-light: #f8fafc;
+
+  /* Font Variables */
+  --font-heading: "Averia Sans Libre", sans-serif;
+  --font-weight-heading: 600;
+  --font-weight-paragraph: 400;
+  --font-paragraph: "Lora", serif;
+  --font-size-paragraph: 18px;
+  --font-size-nav-button: 16px;
+  --font-size-footer-nav: 20px;
+  --font-weight-nav: 500;
+
+
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
@@ -18,11 +30,11 @@
 
   /* Legacy support - gradually replace these */
   --heading1-colour: var(--secondary-color);
-  --heading2-colour: var(--text-light);
-  --heading3-colour: var(--text-light);
-  --heading4-colour: var(--text-light);
-  --paragraph-dark-colour: var(--text-primary);
-  --paragraph-light-colour: var(--text-light);
+  --heading2-colour: var(--text-primary-light);
+  --heading3-colour: var(--text-primary-light);
+  --heading4-colour: var(--text-primary-light);
+  --paragraph-dark-colour: var(--text-primary-dark);
+  --paragraph-light-colour: var(--text-primary-light);
   --paragraph-text-align: center;
   --paragraph-text-shadow: 0px 1px 1px black;
   --background-colour: var(--dark-bg);
@@ -46,6 +58,8 @@
   --form-bg-direction: 135deg;
   --form-bg-start: var(--dark-bg);
   --form-bg-end: var(--medium-bg);
+  --font-size-form-input: 16px;
+  --form-outline: 3px solid rgb(212, 175, 55);
 }
 
 body {
@@ -66,25 +80,21 @@ h4,
 h5,
 nav,
 table * {
-  font-family: "Averia Sans Libre", sans-serif;
-  color: var(--heading1-colour) !important;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  color: var(--heading1-colour);
+  font-weight: var(--font-weight-heading);
   line-height: 1.3;
 }
 
 p {
-  font-family: "Lora", serif;
-  color: var(--paragraph-colour);
-  font-size: 18px;
+  font-family: var(--font-paragraph);
+  color: var(--paragraph-dark-colour);
+  font-size: var(--font-size-paragraph);
   line-height: 1.7;
-  font-weight: 400;
+  font-weight: var(--font-weight-paragraph);
 }
 
-div {
-  border: 1px red solid;
-}
-
-/* Header and Footer styling */
+/* Header styling */
 .hf-container {
   display: flex;
   background: linear-gradient(135deg, var(--dark-bg), var(--medium-bg));
@@ -116,27 +126,28 @@ div {
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--text-light);
-  font-size: 16px;
-  font-weight: 500;
+  color: var(--text-primary-light);
+  font-size: var(--font-size-nav-button);
+  font-weight: var(--font-weight-nav);
   border-radius: var(--radius-button);
   position: relative;
 }
 
+/* Footer styling */
 .footer-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   height: auto;
-  background-image: linear-gradient(to right, white, rgb(245, 246, 227));
+  background-image: var(--light-gradient);
 }
 
 .footer-nav-button {
   cursor: pointer;
   border: none;
   background: none;
-  font-size: 20px;
+  font-size: var(--font-size-footer-nav);
 }
 
 #footer-contact-gegevens-container {
@@ -208,34 +219,7 @@ footer hr {
   }
 }
 
-/* Index page styles */
-#title-paragraph {
-  color: var(--paragraph-light-colour);
-  margin: 10px 10% 0px 10%;
-  text-align: center;
-  text-shadow: 0px 1px 1px black;
-}
-
-/* About page styles */
-#aboutme-Text-Container p {
-  color: var(--paragraph-light-colour);
-  margin-right: 30px;
-}
-
-/* Contact page styles */
-#contact-Form-Container {
-  display: var(--form-display);
-  flex-direction: var(--form-flex-direction);
-  max-width: var(--form-max-width);
-  margin: var(--form-margin);
-  margin-bottom: var(--form-margin-bottom);
-  margin-top: var(--form-margin-top);
-}
-
-#contact-Form-Container div p {
-  color: rgb(245, 246, 227);
-}
-
+/* Form styling */
 .form {
   width: 100%;
   background: linear-gradient(var(--form-bg-direction), var(--form-bg-start), var(--form-bg-end));
@@ -264,22 +248,18 @@ form label {
 form input,
 form textarea {
   border-radius: 5px;
-  font-size: 16px;
+  font-size: var(--font-size-form-input);
   border: none;
   padding: 5px 0px 5px 10px;
-  background-image: linear-gradient(to right, white, rgb(245, 246, 227));
+  background-image: var(--light-gradient);
 }
 
 form input:focus,
 form textarea:focus {
-  outline: 3px solid rgb(212, 175, 55);
+  outline: var(--form-outline);
 }
 
-#contact-Button-Container {
-  display: flex;
-  justify-content: center;
-}
-
+/* Button styling */
 .button {
   margin: var(--button-margin);
   background: linear-gradient(135deg, var(--button-background-color), #d97706);
@@ -294,6 +274,8 @@ form textarea:focus {
   box-shadow: var(--shadow-md);
   position: relative;
   overflow: hidden;
+  z-index: 2;
+  transition: all 0.3s ease-in-out;
 }
 
 .button:hover {

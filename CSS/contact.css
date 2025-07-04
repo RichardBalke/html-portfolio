@@ -2,3 +2,21 @@
 #contact-Form-Container div p {
   margin: 20px 40px 0px 30px;
 }
+
+#contact-Form-Container {
+  display: var(--form-display);
+  flex-direction: var(--form-flex-direction);
+  max-width: var(--form-max-width);
+  margin: var(--form-margin);
+  margin-bottom: var(--form-margin-bottom);
+  margin-top: var(--form-margin-top);
+}
+
+#contact-Form-Container div p {
+  color: rgb(245, 246, 227);
+}
+
+#contact-Button-Container {
+  display: flex;
+  justify-content: center;
+}

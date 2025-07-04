@@ -68,63 +68,55 @@ $translator = init_translator();
         </h3>
         <p id="title-paragraph"><?= $translator->get('title-paragraph') ?></p>
 
-        <button class="button" style="z-index: 999;" onclick="window.location.href='index.php#all-Content'">Mijn werk</button>
+        <button class="button" onclick="window.location.href='index.php#all-Content'">Mijn werk</button>
       </div>
 
       <div id="all-Content">
         <div id="intro-skills-container">
+          <button id="skills-text-show-button"></button>
           <div id="skills-container">
             <h3>Skills</h3>
-            <button class="button" id="skills_text_show">Click me</button>
+
             <svg class="chart" viewBox="-50 -40 300 300">
               <!-- Radar chart background -->
               <polygon
-                points="100,20 180,80 150,170 50,170 20,80"
-                fill="rgb(32, 40, 47)"
-                stroke="#ccc"
-                stroke-width="1" />
+                id="radar-background"
+                points="100,20 180,80 150,170 50,170 20,80" />
               <polygon
-                points="100,50 160,86 145,163 73,140 40,86"
-                fill="rgb(245, 246, 227)"
-                stroke="#0066cc"
-                stroke-width="2" />
+                id="radar-foreground"
+                points="100,50 160,86 145,163 73,140 40,86" />
 
               <!-- Axes -->
               <line
+                class="radar-line"
                 x1="100"
                 y1="104"
                 x2="100"
-                y2="20"
-                stroke="#000"
-                stroke-width="1" />
+                y2="20" />
               <line
+                class="radar-line"
                 x1="100"
                 y1="104"
                 x2="180"
-                y2="80"
-                stroke="#000"
-                stroke-width="1" />
+                y2="80" />
               <line
+                class="radar-line"
                 x1="100"
                 y1="104"
                 x2="150"
-                y2="170"
-                stroke="#000"
-                stroke-width="1" />
+                y2="170" />
               <line
+                class="radar-line"
                 x1="100"
                 y1="104"
                 x2="50"
-                y2="170"
-                stroke="#000"
-                stroke-width="1" />
+                y2="170" />
               <line
+                class="radar-line"
                 x1="100"
                 y1="104"
                 x2="20"
-                y2="80"
-                stroke="#000"
-                stroke-width="1" />
+                y2="80" />
 
               <!-- Labels -->
               <text class="chart-text" x="100" y="10"><?= $translator->get('chart-text1') ?></text>
@@ -171,159 +163,160 @@ $translator = init_translator();
           </div>
 
         </div>
-      </div>
 
-      <div class="main-portfolio-container">
-        <div>
-          <h3>Projecten</h3>
-        </div>
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <a
-                href="https://fittingly-php.azurewebsites.net"
-                target="_blank"><img
-                  class="slideimg"
-                  src="/Images/logo_fittingly_light.png"
-                  alt /></a>
-            </div>
-            <div class="slide">
-              <div class="img-container">
-                <img
-                  class="slideimg"
-                  src="/Images/Pixel_Rampage_Logo2.png"
-                  alt /></a>
-                <div class="hover-message">Work in progress</div>
+
+        <div class="main-portfolio-container">
+          <div>
+            <h3>Projecten</h3>
+          </div>
+          <div class="slider">
+            <div class="slide-track">
+              <div class="slide">
+                <a
+                  href="https://fittingly-php.azurewebsites.net"
+                  target="_blank"><img
+                    class="slideimg"
+                    src="/Images/logo_fittingly_light.png"
+                    alt /></a>
               </div>
-            </div>
-            <div class="slide">
-              <div class="img-container">
+              <div class="slide">
+                <div class="img-container">
+                  <img
+                    class="slideimg"
+                    src="/Images/Pixel_Rampage_Logo2.png"
+                    alt /></a>
+                  <div class="hover-message">Work in progress</div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="img-container">
+                  <img
+                    class="slideimg" id="portfolio-ashray-img"
+                    src="/Images/index_Foto_Ashray.png"
+                    alt />
+                  <div class="hover-message">Work in progress</div>
+                </div>
+              </div>
+              <div class="slide">
                 <img
-                  class="slideimg" id="portfolio-ashray-img"
-                  src="/Images/index_Foto_Ashray.png"
+                  class="slideimg"
+                  src="/Images/poc-filler-image.jpeg"
                   alt />
-                <div class="hover-message">Work in progress</div>
               </div>
-            </div>
-            <div class="slide">
-              <img
-                class="slideimg"
-                src="/Images/poc-filler-image.jpeg"
-                alt />
-            </div>
 
-            <!--Duplicate images-->
-            <div class="slide">
-              <a
-                href="https://fittingly-php.azurewebsites.net"
-                target="_blank"><img
-                  class="slideimg"
-                  src="/Images/logo_fittingly_light.png"
-                  alt /></a>
-            </div>
+              <!--Duplicate images-->
+              <div class="slide">
+                <a
+                  href="https://fittingly-php.azurewebsites.net"
+                  target="_blank"><img
+                    class="slideimg"
+                    src="/Images/logo_fittingly_light.png"
+                    alt /></a>
+              </div>
 
-            <div class="slide">
-              <div class="img-container">
+              <div class="slide">
+                <div class="img-container">
+                  <img
+                    class="slideimg"
+                    src="/Images/Pixel_Rampage_Logo2.png"
+                    alt /></a>
+                  <div class="hover-message">Work in progress</div>
+                </div>
+              </div>
+
+              <div class="slide">
+                <div class="img-container">
+                  <img
+                    class="slideimg" id="portfolio-ashray-img"
+                    src="/Images/index_Foto_Ashray.png"
+                    alt />
+                  <div class="hover-message">Work in progress</div>
+                </div>
+              </div>
+
+              <div class="slide">
                 <img
                   class="slideimg"
-                  src="/Images/Pixel_Rampage_Logo2.png"
-                  alt /></a>
-                <div class="hover-message">Work in progress</div>
-              </div>
-            </div>
-
-            <div class="slide">
-              <div class="img-container">
-                <img
-                  class="slideimg" id="portfolio-ashray-img"
-                  src="/Images/index_Foto_Ashray.png"
+                  src="/Images/poc-filler-image.jpeg"
                   alt />
-                <div class="hover-message">Work in progress</div>
               </div>
-            </div>
 
-            <div class="slide">
-              <img
-                class="slideimg"
-                src="/Images/poc-filler-image.jpeg"
-                alt />
-            </div>
+              <div class="slide">
+                <a
+                  href="https://fittingly-php.azurewebsites.net"
+                  target="_blank"><img
+                    class="slideimg"
+                    src="/Images/logo_fittingly_light.png"
+                    alt /></a>
+              </div>
 
-            <div class="slide">
-              <a
-                href="https://fittingly-php.azurewebsites.net"
-                target="_blank"><img
-                  class="slideimg"
-                  src="/Images/logo_fittingly_light.png"
-                  alt /></a>
-            </div>
+              <div class="slide">
+                <div class="img-container">
+                  <img
+                    class="slideimg"
+                    src="/Images/Pixel_Rampage_Logo2.png"
+                    alt /></a>
+                  <div class="hover-message">Work in progress</div>
+                </div>
+              </div>
 
-            <div class="slide">
-              <div class="img-container">
+              <div class="slide">
+                <div class="img-container">
+                  <img
+                    class="slideimg" id="portfolio-ashray-img"
+                    src="/Images/index_Foto_Ashray.png"
+                    alt />
+                  <div class="hover-message">Work in progress</div>
+                </div>
+              </div>
+
+              <div class="slide">
                 <img
                   class="slideimg"
-                  src="/Images/Pixel_Rampage_Logo2.png"
-                  alt /></a>
-                <div class="hover-message">Work in progress</div>
-              </div>
-            </div>
-
-            <div class="slide">
-              <div class="img-container">
-                <img
-                  class="slideimg" id="portfolio-ashray-img"
-                  src="/Images/index_Foto_Ashray.png"
+                  src="/Images/poc-filler-image.jpeg"
                   alt />
-                <div class="hover-message">Work in progress</div>
               </div>
-            </div>
 
-            <div class="slide">
-              <img
-                class="slideimg"
-                src="/Images/poc-filler-image.jpeg"
-                alt />
-            </div>
+              <div class="slide">
+                <a
+                  href="/https://fittingly-php.azurewebsites.net"
+                  target="_blank"><img
+                    class="slideimg"
+                    src="/Images/logo_fittingly_light.png"
+                    alt /></a>
+              </div>
 
-            <div class="slide">
-              <a
-                href="/https://fittingly-php.azurewebsites.net"
-                target="_blank"><img
-                  class="slideimg"
-                  src="/Images/logo_fittingly_light.png"
-                  alt /></a>
-            </div>
+              <div class="slide">
+                <div class="img-container">
+                  <img
+                    class="slideimg"
+                    src="/Images/Pixel_Rampage_Logo2.png"
+                    alt /></a>
+                  <div class="hover-message">Work in progress</div>
+                </div>
+              </div>
 
-            <div class="slide">
-              <div class="img-container">
+              <div class="slide">
+                <div class="img-container">
+                  <img
+                    class="slideimg" id="portfolio-ashray-img"
+                    src="/Images/index_Foto_Ashray.png"
+                    alt />
+                  <div class="hover-message">Work in progress</div>
+                </div>
+              </div>
+
+              <div class="slide">
                 <img
                   class="slideimg"
-                  src="/Images/Pixel_Rampage_Logo2.png"
-                  alt /></a>
-                <div class="hover-message">Work in progress</div>
-              </div>
-            </div>
-
-            <div class="slide">
-              <div class="img-container">
-                <img
-                  class="slideimg" id="portfolio-ashray-img"
-                  src="/Images/index_Foto_Ashray.png"
+                  src="/Images/poc-filler-image.jpeg"
                   alt />
-                <div class="hover-message">Work in progress</div>
               </div>
-            </div>
-
-            <div class="slide">
-              <img
-                class="slideimg"
-                src="/Images/poc-filler-image.jpeg"
-                alt />
             </div>
           </div>
-        </div>
 
-        <!--Duplicate images end-->
+          <!--Duplicate images end-->
+        </div>
       </div>
     </div>
     </div>

@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const imgRight = document.querySelector(".scroll-img-container-right");
   const headerShow = document.querySelector(".hf-container");
   const titleContentFadeIn = document.querySelector("#title-container");
-  const allContent = document.querySelector("#all-Content");
+  // const allContent = document.querySelector("#all-Content");
   const footerShow = document.querySelector("footer");
 
   // If not shown, add the animate class and set the session flag
@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     imgRight.classList.add("animate");
     headerShow.classList.add("animate");
     titleContentFadeIn.classList.add("animate");
-    allContent.classList.add("animate");
-    footerShow.classList.add("animate");
+    // allContent.classList.add("show");
+    footerShow.classList.add("show");
 
     // Mark the animation as shown in sessionStorage
     sessionStorage.setItem("introAnimationShown", "true");
@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     imgLeft.style.transform = "translateX(-400px)";
     imgRight.style.transform = "translateX(400px)";
     headerShow.style.transform = "translatey(0px)";
-    allContent.style.display = "block";
-    footerShow.style.display = "block";
+    // allContent.style.display = "block";
+    // footerShow.style.display = "block";
   }
 
   if (window.matchMedia("(max-width: 800px)").matches) {

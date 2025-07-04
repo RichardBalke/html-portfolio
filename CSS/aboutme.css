@@ -8,7 +8,8 @@
 .aboutme-Content-Container {
   display: flex;
   flex-direction: row;
-  background: linear-gradient(45deg, rgb(2, 4, 9), rgb(37, 50, 100));
+  background: var(--dark-bg);
+  /* background: linear-gradient(45deg, rgb(2, 4, 9), rgb(37, 50, 100)); */
 }
 
 #aboutme-Img {
@@ -25,14 +26,15 @@
   color: rgb(245, 246, 227) !important;
   margin-right: 30px;
 }
+/* About page styles */
+#aboutme-Text-Container p {
+  color: var(--paragraph-light-colour);
+  margin-right: 30px;
+}
 
 .personalia-Container *,
 td {
-  color: rgb(245, 246, 227);
-}
-
-.vaardigheden-Container * {
-  color: rgb(26, 31, 39) !important;
+  color: var(--paragraph-light-colour);
 }
 
 .skills-Table-Box-Filled {
@@ -71,6 +73,13 @@ td {
   background-image: linear-gradient(to right, white, rgb(245, 246, 227));
 }
 
+.vaardigheden-Container h2,
+.vaardigheden-Container h3,
+.vaardigheden-Container p, 
+.vaardigheden-Container table td {
+  color: var(--paragraph-dark-colour) !important;
+}
+
 h2,
 h3,
 p,
@@ -86,10 +95,11 @@ td hr {
 
 .aboutme-Content p span {
   background-color: rgb(212, 175, 55);
-  color: rgb(245, 246, 227) !important;
+  /* color: rgb(245, 246, 227) !important; */
 }
 .aboutme-Content p i {
-  color: rgb(212, 175, 55) !important;
+  color: var(--secondary-color);
+  /* color: rgb(212, 175, 55) !important; */
 }
 
 tr th {
