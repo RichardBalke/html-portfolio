@@ -297,6 +297,7 @@ footer.show {
   gap: 1.5rem;
   animation: slidein-skillstext 3s ease-in-out forwards;
 }
+
 .skills-text {
   background: white;
   padding: 1.5rem;
