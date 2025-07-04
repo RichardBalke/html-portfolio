@@ -34,10 +34,11 @@ $translator = init_translator();
       <div class="brand-name-container"></div>
       <div class="nav-container">
         <nav>
-          <button class="nav-button" id="home-button" onclick="window.location.href='index.php'">Home</button>
-          <button class="nav-button" id="about-button" onclick="window.location.href='about.html'"><?= $translator->get('nav-bar2') ?></button>
-          <button class="nav-button" id="contact-button" onclick="window.location.href='contact.php'">Contact</button>
+          <button class="nav-button" id="home-button" onclick="window.location.href='index.php'"><?= $translator->get('nav_bar1') ?></button>
+          <button class="nav-button" id="about-button" onclick="window.location.href='about.html'"><?= $translator->get('nav_bar2') ?></button>
+          <button class="nav-button" id="contact-button" onclick="window.location.href='contact.php'"><?= $translator->get('nav_bar3') ?></button>
           <!-- <button class="nav-button" id="portfolio-button">Portfolio</button> -->
+          <button class="nav-button" id="language-dropdown-menu"><img src="/Images/Icons/vlag-nederlands-engels.png" alt=""></button>
         </nav>
       </div>
     </div>
@@ -66,7 +67,7 @@ $translator = init_translator();
           Junior <br> Web
           Developer
         </h3>
-        <p id="title-paragraph"><?= $translator->get('title-paragraph') ?></p>
+        <p id="title-paragraph"><?= $translator->get('title_paragraph') ?></p>
 
         <button class="button" onclick="window.location.href='index.php#all-Content'">Mijn werk</button>
       </div>
@@ -75,7 +76,7 @@ $translator = init_translator();
         <div id="intro-skills-container">
           <button id="skills-text-show-button"></button>
           <div id="skills-container">
-            <h3>Skills</h3>
+            <h3><?= $translator->get('skills_container_h3') ?></h3>
 
             <svg class="chart" viewBox="-50 -40 300 300">
               <!-- Radar chart background -->
@@ -119,46 +120,36 @@ $translator = init_translator();
                 y2="80" />
 
               <!-- Labels -->
-              <text class="chart-text" x="100" y="10"><?= $translator->get('chart-text1') ?></text>
-              <text class="chart-text" x="200" y="65"><?= $translator->get('chart-text2') ?></text>
-              <text class="chart-text" x="145" y="190"><?= $translator->get('chart-text3') ?></text>
-              <text class="chart-text" x="45" y="190"><?= $translator->get('chart-text4') ?></text>
-              <text class="chart-text" x="-5" y="60" text-anchor="start">
-                <tspan x="0" dy="0"><?= $translator->get('chart-text5-1') ?></tspan>
-                <tspan x="-3" dy="1.2em"><?= $translator->get('chart-text5-2') ?></tspan>
+              <text class="chart_text" x="100" y="10"><?= $translator->get('chart_text1') ?></text>
+              <text class="chart_text" x="200" y="65"><?= $translator->get('chart_text2') ?></text>
+              <text class="chart_text" x="145" y="190"><?= $translator->get('chart_text3') ?></text>
+              <text class="chart_text" x="45" y="190"><?= $translator->get('chart_text4') ?></text>
+              <text class="chart_text" x="-5" y="60" text-anchor="start">
+                <tspan x="0" dy="0"><?= $translator->get('chart_text5-1') ?></tspan>
+                <tspan x="-3" dy="1.2em"><?= $translator->get('chart_text5-2') ?></tspan>
               </text>
             </svg>
           </div>
           <div id="skills-text-container">
             <div class="skills-text">
-              <h4><?= $translator->get('chart-text1') ?></h4>
-              <p>
-                Ik ben een probleemoplosser die altijd op zoek is naar de beste oplossing voor elk probleem. Ik ben in staat om snel en effectief te reageren op uitdagingen en ik ben niet bang om nieuwe dingen uit te proberen.
-              </p>
+              <h4><?= $translator->get('chart_text1') ?></h4>
+              <p><?= $translator->get('chart_text_paragraph1') ?></p>
             </div>
             <div class="skills-text">
-              <h4><?= $translator->get('chart-text2') ?></h4>
-              <p>
-                Ik ben in staat om zelfstandig te werken en mijn eigen beslissingen te nemen. Ik heb de discipline en motivatie om mijn werk op tijd af te krijgen zonder dat iemand me hoeft te controleren.
-              </p>
+              <h4><?= $translator->get('chart_text2') ?></h4>
+              <p><?= $translator->get('chart_text_paragraph2') ?></p>
             </div>
             <div class="skills-text">
-              <h4><?= $translator->get('chart-text3') ?></h4>
-              <p>
-                Ik ben altijd op zoek naar manieren om mijn vaardigheden en kennis uit te breiden. Ik ben bereid om nieuwe technologieën en tools te leren en ik ben niet bang om buiten mijn comfortzone te treden.
-              </p>
+              <h4><?= $translator->get('chart_text3') ?></h4>
+              <p><?= $translator->get('chart_text_paragraph3') ?></p>
             </div>
             <div class="skills-text">
-              <h4><?= $translator->get('chart-text4') ?></h4>
-              <p>
-                Ik ben in staat om effectief te communiceren met zowel technische als niet-technische mensen. Ik kan complexe ideeën eenvoudig uitleggen en ik ben altijd bereid om naar anderen te luisteren.
-              </p>
+              <h4><?= $translator->get('chart_text4') ?></h4>
+              <p><?= $translator->get('chart_text_paragraph4') ?></p>
             </div>
             <div class="skills-text">
-              <h4><?= $translator->get('chart-text5') ?></h4>
-              <p>
-                Ik kan me snel aanpassen aan veranderingen in de omgeving of het project. Dit stelt me in staat om flexibel te blijven en effectief samen te werken met anderen, ongeacht hun achtergrond of ervaring.
-              </p>
+              <h4><?= $translator->get('chart_text5') ?></h4>
+              <p><?= $translator->get('chart_text_paragraph5') ?></p>
             </div>
           </div>
 
@@ -167,7 +158,7 @@ $translator = init_translator();
 
         <div class="main-portfolio-container">
           <div>
-            <h3>Projecten</h3>
+            <h3><?= $translator->get('portfolio_container_h3') ?></h3>
           </div>
           <div class="slider">
             <div class="slide-track">
@@ -185,7 +176,7 @@ $translator = init_translator();
                     class="slideimg"
                     src="/Images/Pixel_Rampage_Logo2.png"
                     alt /></a>
-                  <div class="hover-message">Work in progress</div>
+                  <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
               <div class="slide">
@@ -194,7 +185,7 @@ $translator = init_translator();
                     class="slideimg" id="portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
                     alt />
-                  <div class="hover-message">Work in progress</div>
+                  <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
               <div class="slide">
@@ -220,7 +211,7 @@ $translator = init_translator();
                     class="slideimg"
                     src="/Images/Pixel_Rampage_Logo2.png"
                     alt /></a>
-                  <div class="hover-message">Work in progress</div>
+                  <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
 
@@ -230,7 +221,7 @@ $translator = init_translator();
                     class="slideimg" id="portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
                     alt />
-                  <div class="hover-message">Work in progress</div>
+                  <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
 
@@ -256,7 +247,7 @@ $translator = init_translator();
                     class="slideimg"
                     src="/Images/Pixel_Rampage_Logo2.png"
                     alt /></a>
-                  <div class="hover-message">Work in progress</div>
+                  <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
 
@@ -266,7 +257,7 @@ $translator = init_translator();
                     class="slideimg" id="portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
                     alt />
-                  <div class="hover-message">Work in progress</div>
+                  <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
 
@@ -292,7 +283,7 @@ $translator = init_translator();
                     class="slideimg"
                     src="/Images/Pixel_Rampage_Logo2.png"
                     alt /></a>
-                  <div class="hover-message">Work in progress</div>
+                  <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
 
@@ -302,7 +293,7 @@ $translator = init_translator();
                     class="slideimg" id="portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
                     alt />
-                  <div class="hover-message">Work in progress</div>
+                  <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
 
