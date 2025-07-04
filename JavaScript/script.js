@@ -15,19 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const titleContentFadeIn = document.querySelector("#title-container");
   const allContent = document.querySelector("#all-Content");
   const footerShow = document.querySelector("footer");
+  let check = false;
 
   if (!isAnimationShown) {
     imgLeft.classList.add("animate");
     imgRight.classList.add("animate");
     headerShow.classList.add("animate");
     titleContentFadeIn.classList.add("animate");
-
-    setTimeout(() => {
-    allContent.classList.add("show");
-    footerShow.classList.add("show");
-    }, 3000);
-
+    check = true;
     sessionStorage.setItem("introAnimationShown", "true");
+
   } else {
     imgLeft.style.transform = "translateX(-400px)";
     imgRight.style.transform = "translateX(400px)";
@@ -36,27 +33,32 @@ document.addEventListener("DOMContentLoaded", () => {
     footerShow.style.display = "block";
   }
 
-  let animationsComplete = 0;
+  if (check) {
+    allContent.classList.add("show");
+    footerShow.classList.add("show");
+  }
 
-  const handleAnimationEnd = () => {
-    animationsComplete++;
-    if (animationsComplete === 2) {
-      allContent.classList.add("show");
-      footerShow.classList.add("show");
-    }
-    imgLeft.addEventListener("animationend", handleAnimationEnd);
-    imgRight.addEventListener("animationend", handleAnimationEnd);
+  // let animationsComplete = 0;
 
-    setTimeout(() => {
-      if (
-        !allContent.classList.contains("show") &&
-        !footerShow.classList.contains("show")
-      ) {
-        allContent.classList.add("show");
-        footerShow.classList.add("show");
-      }
-    }, 6000);
-  };
+  // const handleAnimationEnd = () => {
+  //   animationsComplete++;
+  //   if (animationsComplete === 4) {
+  //     allContent.classList.add("show");
+  //     footerShow.classList.add("show");
+  //   }
+  //   imgLeft.addEventListener("animationend", handleAnimationEnd);
+  //   imgRight.addEventListener("animationend", handleAnimationEnd);
+
+  // setTimeout(() => {
+  //   if (
+  //     !allContent.classList.contains("show") &&
+  //     !footerShow.classList.contains("show")
+  //   ) {
+  //     allContent.classList.add("show");
+  //     footerShow.classList.add("show");
+  //   }
+  // }, 6000);
+  // };
 
   if (window.matchMedia("(max-width: 800px)").matches) {
     const handleAnimationEnd = (container) => {
