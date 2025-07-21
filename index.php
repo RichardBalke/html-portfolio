@@ -182,7 +182,7 @@ $translator = init_translator();
               <div class="slide">
                 <div class="img-container">
                   <img
-                    class="slideimg" id="portfolio-ashray-img"
+                    class="slideimg portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
                     alt />
                   <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
@@ -218,7 +218,7 @@ $translator = init_translator();
               <div class="slide">
                 <div class="img-container">
                   <img
-                    class="slideimg" id="portfolio-ashray-img"
+                    class="slideimg portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
                     alt />
                   <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
@@ -254,7 +254,7 @@ $translator = init_translator();
               <div class="slide">
                 <div class="img-container">
                   <img
-                    class="slideimg" id="portfolio-ashray-img"
+                    class="slideimg portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
                     alt />
                   <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
@@ -290,7 +290,7 @@ $translator = init_translator();
               <div class="slide">
                 <div class="img-container">
                   <img
-                    class="slideimg" id="portfolio-ashray-img"
+                    class="slideimg portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
                     alt />
                   <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
@@ -322,3 +322,7 @@ $translator = init_translator();
 </body>
 
 </html>
+
+
+
+

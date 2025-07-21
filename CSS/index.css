@@ -79,20 +79,13 @@
   }
 }
 
-.scroll-img-container-left,
-.scroll-img-container-right {
-  position: 0;
-  transition: none;
-  z-index: 999;
-}
-
 /* Zorg dat ze pas animeren wanneer de class wordt toegevoegd */
 .scroll-img-container-left.animate {
-  animation: slideleft 6s ease-in-out;
+  animation: slideleft 5s ease-in-out forwards;
 }
 
 .scroll-img-container-right.animate {
-  animation: slideright 6s ease-in-out;
+  animation: slideright 5s ease-in-out forwards;
 }
 
 /* Splash screen einde */
@@ -393,21 +386,20 @@ footer.show {
   }
 }
 
-.slider {
-  position: relative;
+.slider .slide-track {
+  animation: scroll 10s linear infinite;
+  display: flex;
+  width: calc(270px * 4);
 }
 
-.slideimg {
-  height: 230px;
-  border-radius: 1rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.slider .slide .slideimg {
+  width: 230px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .slide {
-  margin-left: 20px;
-  margin-right: 20px;
-  transition: transform 0.3s ease;
+  margin: auto 20px auto 20px;
 }
 
 .slide:hover {
@@ -423,14 +415,17 @@ footer.show {
   display: inline-block;
 }
 
-#portfolio-ashray-img {
+.portfolio-ashray-img {
   filter: grayscale(90%);
   transition: all 0.5s ease;
-  display: block;
+  height: auto;
+  width: 230px;
+  height: 230px;
 }
 
-#portfolio-ashray-img:hover {
+.portfolio-ashray-img:hover {
   filter: grayscale(0%);
+  transition: all 0.5s ease;
 }
 
 /* Message styling */
@@ -455,22 +450,14 @@ footer.show {
 }
 
 .slide-track {
-  animation: scroll 25s linear infinite;
+  animation: scroll 3s linear infinite;
   display: flex;
-  width: calc(270px * 4);
+  max-width: fit-content;
+  /* width: calc(230px * 4); */
 }
 
 .slider:hover .slide-track {
   animation-play-state: paused;
-}
-
-#portfolio-ashray-img {
-  filter: grayscale(90%);
-}
-
-#portfolio-ashray-img:hover {
-  filter: grayscale(0%);
-  transition: all 0.5s ease;
 }
 
 /* Portfolio slider einde */
