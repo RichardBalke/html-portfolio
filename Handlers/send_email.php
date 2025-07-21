@@ -1,4 +1,6 @@
 <?php
+
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Retrieve form data
     $naam = htmlspecialchars($_POST['naam']);
@@ -30,4 +32,5 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 } else {
     echo "Ongeldige aanvraag.";
 }
+
 ?>
