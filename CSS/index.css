@@ -117,7 +117,6 @@ footer.show {
   opacity: 1;
 }
 
-
 #title-container.animate,
 #intro-skills-container.animate,
 .main-portfolio-container.animate,
@@ -144,7 +143,7 @@ footer.show {
   margin: 0;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  font-size: 8rem;
+  font-size: var(--h2-font-size);
   z-index: 1;
   background: linear-gradient(135deg, #f59e0b, #d97706);
   background-clip: text;
@@ -165,7 +164,6 @@ footer.show {
   margin: 1rem 0;
   text-align: center;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  font-size: 3.5rem;
   color: #e2e8f0 !important;
   font-weight: 300;
   letter-spacing: 0.05em;
@@ -239,13 +237,9 @@ footer.show {
   top: 50%;
   right: 5%;
   transform: translateY(-50%);
-  font: var(--font-heading);
   background: none;
   border: none;
-  font-size: 60px;
   cursor: pointer;
-  width: 0;
-  height: 0;
   margin: auto 0px auto 0px;
   border-top: 70px solid transparent;
   border-right: 70px solid var(--primary-color);
@@ -308,7 +302,7 @@ footer.show {
 .skills-text h4 {
   color: #1e293b !important;
   margin-bottom: 0.75rem;
-  font-size: 1.25rem;
+  font-size: var(--h4-font-size);
 }
 
 .skills-text p {
@@ -321,14 +315,12 @@ footer.show {
 #skills-container h3 {
   color: var(--text-primary-dark) !important;
   text-align: center;
-  font-size: 3rem;
   margin: 0 0 1.5rem 0;
   font-weight: 700;
   background-clip: text;
 }
 
 .chart {
-  min-width: 500px;
   max-width: 800px;
   height: auto;
   margin: auto;
@@ -337,7 +329,7 @@ footer.show {
 .chart_text {
   fill: var(--text-primary-dark) !important;
   font-family: "Lora", serif;
-  font-size: 10px;
+  font-size: var(--chart-text);
   text-anchor: middle;
   text-wrap: wrap;
 }
@@ -362,7 +354,6 @@ footer.show {
   display: flex;
   flex-direction: column;
   text-align: center;
-  font-size: 30px;
   margin-bottom: 5rem;
   padding: 4rem 2rem;
   background: linear-gradient(135deg, #0f172a, #1e293b);
@@ -370,7 +361,7 @@ footer.show {
 
 .main-portfolio-container h3 {
   color: #f8fafc !important;
-  font-size: 3rem;
+  font-size: var(--h3-font-size);
   margin-bottom: 3rem;
   font-weight: 700;
 }
@@ -438,7 +429,7 @@ footer.show {
   background: rgba(0, 0, 0, 0.6);
   padding: 10px 15px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: var(--font-size-paragraph);
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none;
@@ -462,6 +453,16 @@ footer.show {
 
 /* Portfolio slider einde */
 
+@media (max-width: 530px) {
+  #skills-container h3 {
+    font-size: 8vw;
+  }
+
+  .skills-text p {
+    font-size: 3vw;
+  }
+}
+
 @media (max-width: 1001px) {
   #intro-skills-container {
     flex-direction: column;
@@ -482,21 +483,35 @@ footer.show {
     max-width: 800px;
   }
 
-  h2 {
-    font-size: 100px !important;
-  }
-
-  h3 {
-    font-size: 60px !important;
-  }
-
   p {
-    font-size: 20px;
+    font-size: var(--font-size-paragraph);
     text-align: center;
     margin: 0% 2% 0% 2% !important;
   }
 
   .brand-name-container {
     display: none;
+  }
+  #skills-text-show-button {
+    display: none;
+  }
+
+  #skills-text-container {
+    position: inherit;
+    right: 0%;
+    width: 95%;
+  }
+
+  #skills-container {
+    max-width: 100% !important;
+  }
+}
+
+@media (max-width: 1210px) {
+}
+
+@media (max-width: 1480px) {
+  #skills-text-container.show {
+    gap: 5px !important;
   }
 }

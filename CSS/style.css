@@ -16,10 +16,14 @@
   --font-weight-heading: 600;
   --font-weight-paragraph: 400;
   --font-paragraph: "Lora", serif;
-  --font-size-paragraph: 18px;
-  --font-size-nav-button: 16px;
-  --font-size-footer-nav: 20px;
+  --font-size-paragraph: 1.1rem;
+  --font-size-nav-button: 1rem;
+  --font-size-footer-nav: 1.2rem;
   --font-weight-nav: 500;
+  --h2-font-size: 6.25rem;
+  --h3-font-size: 3.75rem;
+  --h4-font-size: 1.25rem;
+  --chart-text: 0.625rem;
 
   /* Shadows */
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -27,7 +31,7 @@
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
   --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 
-  /* Legacy support - gradually replace these */
+ /* Font Sizes */
   --heading1-colour: var(--secondary-color);
   --heading2-colour: var(--text-primary-light);
   --heading3-colour: var(--text-primary-light);
@@ -42,7 +46,7 @@
   --button-background-color: var(--secondary-color);
   --button-margin: 20px;
   --button-color: var(--text-primary);
-  --button-font-size: 16px;
+  --button-font-size: 1rem;
   --button-width: 200px;
   --button-height: 40px;
   --button-cursor: pointer;
@@ -91,6 +95,21 @@ p {
   font-size: var(--font-size-paragraph);
   line-height: 1.7;
   font-weight: var(--font-weight-paragraph);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  color: var(--heading2-colour);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  color: var(--heading3-colour);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  color: var(--heading4-colour);
 }
 
 /* Header styling */
