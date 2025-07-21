@@ -7,7 +7,7 @@ return [
     'nav_bar3' => 'Contact',
 
     // Index page
-    'title_paragraph' => 'Ik ben Richard Balke, een gepassioneerde full-stack developer met oog voor design en gebruiksvriendelijkheid. Mijn doel is om innovatieve en efficiënte oplossingen te creëren die zowel functioneel als visueel aantrekkelijk zijn. Met mijn sterke focus op gebruikerservaring en moderne technologieën streef ik ernaar om projecten naar een hoger niveau te tillen!',
+    'title_paragraph' => 'Ik ben Richard Balke, een gepassioneerde full-stack developer met oog voor design en gebruiksvriendelijkheid. Mijn doel is om innovatieve en efficiënte oplossingen te creëren die zowel functioneel als visueel aantrekkelijk zijn. Met mijn sterke focus op gebruikerservaring en moderne technologieën streef ik ernaar om Projects naar een hoger niveau te tillen!',
 
     // Skills container
     'skills_container_h3' => 'Vaardigheden',
@@ -25,7 +25,7 @@ return [
     'chart_text5-2' => 'vermogen',
 
     // Main portfolio
-    'portfolio_container_h3' => 'projecten',
+    'portfolio_container_h3' => 'Projects',
 
     // Slide hover message
     'slide_hover_message' => 'Binnekort beschikbaar',

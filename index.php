@@ -164,7 +164,7 @@ $translator = init_translator();
             <div class="slide-track">
               <div class="slide">
                 <a
-                  href="https://fittingly-php.azurewebsites.net"
+                  href='/Projects/Fittingly_Avans/public_html/index.php'
                   target="_blank"><img
                     class="slideimg"
                     src="/Images/logo_fittingly_light.png"
@@ -198,7 +198,7 @@ $translator = init_translator();
               <!--Duplicate images-->
               <div class="slide">
                 <a
-                  href="https://fittingly-php.azurewebsites.net"
+                  href='/Projects/Fittingly_Avans/public_html/index.php'
                   target="_blank"><img
                     class="slideimg"
                     src="/Images/logo_fittingly_light.png"
@@ -234,7 +234,7 @@ $translator = init_translator();
 
               <div class="slide">
                 <a
-                  href="https://fittingly-php.azurewebsites.net"
+                  href='/Projects/Fittingly_Avans/public_html/index.php'
                   target="_blank"><img
                     class="slideimg"
                     src="/Images/logo_fittingly_light.png"
@@ -270,7 +270,7 @@ $translator = init_translator();
 
               <div class="slide">
                 <a
-                  href="/https://fittingly-php.azurewebsites.net"
+                  href='/Projects/Fittingly_Avans/public_html/index.php'
                   target="_blank"><img
                     class="slideimg"
                     src="/Images/logo_fittingly_light.png"
@@ -322,7 +322,3 @@ $translator = init_translator();
 </body>
 
 </html>
-
-
-
-
