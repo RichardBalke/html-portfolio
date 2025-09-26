@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Ashray van Ommeren</title>
+
+    <link rel="stylesheet" href="../Styles/global_styles.css" />
+    <link rel="stylesheet" href="../Styles/h&f_styles.css" />
+    <link rel="stylesheet" href="../Styles/contact_styles.css" />
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div id="contact-Container">
+        <div class="text-Container">
+          <h1>Laten we in contact komen.</h1>
+          <h2>
+            Laat een bericht voor mij achter met behulp van het
+            contactformulier.
+          </h2>
+          <p>
+            Wil je liever op een andere manier contact opnemen? <br />
+            Dat kan, gebruik de handige snelkoppelingen hieronder.
+          </p>
+        </div>
+        <div class="content-Container">
+          <div id="icon-Container">
+            <a
+              href="https://www.linkedin.com/in/ashray-van-ommeren-303a71170/?originalSubdomain=nl" target="_blank"
+              ><img src="../Images/Indeed_Pictogram.png" alt=""
+            /></a>
+            <a href="https://www.instagram.com/ashrayvano/" target="_blank"
+              ><img src="../Images/Instagram_Pictogram.png" alt=""
+            /></a>
+            <a
+              href="https://open.spotify.com/user/y5mll4e35kz2gflfe2jn9k1j9?si=8YArzrRbTVKKv96NJ8utBQ&nd=1&dlsi=a8b4317808044ae7" target="_blank"
+              ><img src="../Images/Spotify_Pictogram.png" alt=""
+            /></a>
+            <a
+              href="https://www.youtube.com/channel/UCxlnlAbzEM8jvwZo2b5NSjA?view_as=subscriber" target="_blank"
+              ><img src="../Images/Youtube_Pictogram.png" alt=""
+            /></a>
+          </div>
+          <div id="div-Seperator"></div>
+          <div id="form-Container">
+            <form action="../php_Files/send_email.php">
+              <input type="text" id="form-Naam" placeholder="Naam" required />
+
+              <input
+                type="text"
+                id="form-Emailadres"
+                placeholder="Voorbeeld@gmail.com"
+                required
+              />
+
+              <textarea
+                name="bericht"
+                id="form-Bericht"
+                placeholder="Voeg een bericht toe"
+                rows="12"
+                required
+              ></textarea>
+            </form>
+            <div><button>Verzenden</button></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../Scripts/script.js"></script>
+    <script>
+      includeHTML("header.html", "header");
+      includeHTML("footer.html", "footer");
+    </script>
+  </body>
+</html>

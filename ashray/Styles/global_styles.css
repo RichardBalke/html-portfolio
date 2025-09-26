@@ -1,0 +1,22 @@
+body {
+    background-color: rgb(50, 51, 51);
+}
+
+h1, h2, h3 {
+    font-family: "Roboto", serif;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-size: 44px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 17px;
+    color: #c1c1c1;
+}
+

@@ -1,0 +1,34 @@
+.content-Container {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#index-Img-Container img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(90%);
+}
+
+#button-Fadein button {
+    background-color: var(--corvid-background-color,rgb(56, 74, 211));
+    border: none;
+    width: 142px;
+    height: 40px;
+    box-shadow: 10px 10px #1c256a;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (min-width: 700px) {
+    .content-Container {
+        max-width: 1080px;
+        flex-direction: row;
+    }
+    
+    #index-Img-Container img {
+        height: auto;
+        width: 100%;
+    }
+}

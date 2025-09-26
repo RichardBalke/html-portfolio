@@ -30,7 +30,7 @@ $translator = init_translator();
 
       <form class="form" method="POST" action="/Handlers/send_email.php" id="contact-Form">
         <div>
-          <h3>Contact formulier</h3>
+          <h3 style="margin-left: 10px;">Contact formulier</h3>
           <p id="form-paragraph">Vul het formulier in en ik neem zo snel mogelijk contact met je op.</p>
         </div>
         <div id="form-Input">

@@ -1,0 +1,26 @@
+#aboutme-Content-Container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.content-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+
+.content-Container img {
+    border-radius: 5%;
+    height: auto;
+    width: 350px;
+    filter: grayscale(0%);
+    transition: filter 0.55s ease-in-out;
+}
+
+.content-Container img:hover {
+    filter: grayscale(100%);
+    transition: filter 0.55s ease-in-out;
+}

@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    margin: auto;
+    max-width: 1080px;
+    flex-direction: column;
+}
+
+.content-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.content-Container img{
+    width: 300px;
+    height: auto;
+    background-color: black;
+    margin: 20px;
+}

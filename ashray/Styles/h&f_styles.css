@@ -1,0 +1,30 @@
+#header-Container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 360px;
+    margin: auto;
+}
+
+#nav-Button-Container, #nav-Button-Container nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 600px;
+}
+
+.nav-Button {
+    border: none;
+    background: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+@media (min-width: 700px) {
+    #header-Container {
+        max-width: 1080px;
+    }
+
+}
