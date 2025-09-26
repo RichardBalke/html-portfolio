@@ -27,12 +27,12 @@ $translator = init_translator();
   <main>
 
     <div id="contact-Form-Container">
-      <div>
-        <h2>Contact formulier</h2>
-        <p id="form-paragraph">Vul het formulier in en ik neem zo snel mogelijk contact met je op.</p>
-      </div>
-      <form class="form" method="POST" action="/Email_handler/send_email.php" id="contact-Form">
 
+      <form class="form" method="POST" action="/Handlers/send_email.php" id="contact-Form">
+        <div>
+          <h3>Contact formulier</h3>
+          <p id="form-paragraph">Vul het formulier in en ik neem zo snel mogelijk contact met je op.</p>
+        </div>
         <div id="form-Input">
           <label for="Naam">Naam:</label>
           <input type="text" name="naam" placeholder="Naam" required />

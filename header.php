@@ -7,7 +7,7 @@
     <div class="hf-container">
       <div class="logo-container">
         <a href="/index.php"
-          ><img src="/Images/website_icon1.png" alt
+          ><img src="/Images/Icons/website_icon1.png" alt
         /></a>
       </div>
       <div class="brand-name-container"></div>

@@ -4,8 +4,7 @@ $translator = init_translator();
 
 ?>
 
-
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="nl">
 
 <head>
@@ -29,7 +28,7 @@ $translator = init_translator();
   <header>
     <div class="hf-container">
       <div class="logo-container">
-        <a href="/index.php"><img src="/Images/website_icon1.png" alt /></a>
+        <a href="/index.php"><img src="/Images/Icons/website_icon1.png" alt /></a>
       </div>
       <div class="brand-name-container"></div>
       <div class="nav-container">
@@ -38,7 +37,7 @@ $translator = init_translator();
           <button class="nav-button" id="about-button" onclick="window.location.href='about.html'"><?= $translator->get('nav_bar2') ?></button>
           <button class="nav-button" id="contact-button" onclick="window.location.href='contact.php'"><?= $translator->get('nav_bar3') ?></button>
           <!-- <button class="nav-button" id="portfolio-button">Portfolio</button> -->
-          <button class="nav-button" id="language-dropdown-menu"><img src="/Images/Icons/vlag-nederlands-engels.png" alt=""></button>
+          <!-- <button class="nav-button" id="language-dropdown-menu"><img src="/Images/Icons/vlag-nederlands-engels.png" alt=""></button> -->
         </nav>
       </div>
     </div>
@@ -164,7 +163,7 @@ $translator = init_translator();
             <div class="slide-track">
               <div class="slide">
                 <a
-                  href='/Projects/Fittingly_Avans/public_html/index.php'
+                  href="/fittingly/public_html/index.php"
                   target="_blank"><img
                     class="slideimg"
                     src="/Images/logo_fittingly_light.png"
@@ -175,7 +174,7 @@ $translator = init_translator();
                   <img
                     class="slideimg"
                     src="/Images/Pixel_Rampage_Logo2.png"
-                    alt /></a>
+                    alt />
                   <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
@@ -198,7 +197,7 @@ $translator = init_translator();
               <!--Duplicate images-->
               <div class="slide">
                 <a
-                  href='/Projects/Fittingly_Avans/public_html/index.php'
+                  href="/fittingly/public_html/index.php"
                   target="_blank"><img
                     class="slideimg"
                     src="/Images/logo_fittingly_light.png"
@@ -210,7 +209,7 @@ $translator = init_translator();
                   <img
                     class="slideimg"
                     src="/Images/Pixel_Rampage_Logo2.png"
-                    alt /></a>
+                    alt />
                   <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
@@ -234,7 +233,7 @@ $translator = init_translator();
 
               <div class="slide">
                 <a
-                  href='/Projects/Fittingly_Avans/public_html/index.php'
+                  href="/fittingly/public_html/index.php"
                   target="_blank"><img
                     class="slideimg"
                     src="/Images/logo_fittingly_light.png"
@@ -246,7 +245,7 @@ $translator = init_translator();
                   <img
                     class="slideimg"
                     src="/Images/Pixel_Rampage_Logo2.png"
-                    alt /></a>
+                    alt />
                   <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>
@@ -270,7 +269,7 @@ $translator = init_translator();
 
               <div class="slide">
                 <a
-                  href='/Projects/Fittingly_Avans/public_html/index.php'
+                  href="/fittingly/public_html/index.php"
                   target="_blank"><img
                     class="slideimg"
                     src="/Images/logo_fittingly_light.png"
@@ -282,7 +281,7 @@ $translator = init_translator();
                   <img
                     class="slideimg"
                     src="/Images/Pixel_Rampage_Logo2.png"
-                    alt /></a>
+                    alt />
                   <div class="hover-message"><?= $translator->get('slide_hover_message') ?></div>
                 </div>
               </div>

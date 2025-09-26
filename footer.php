@@ -23,14 +23,14 @@
             target="_blank  (26) Richard Balke | LinkedIn"
             rel="”noopener"
             noreferrer”
-            ><img src="/Images/linkedin-Icon.png" alt=""
+            ><img src="/Images/Icons/linkedin-Icon.png" alt=""
           /></a>
           <a
             href="https://github.com/RichardBalke"
             target="_blank"
             rel="”noopener"
             noreferrer”
-            ><img src="/Images/github-Icon.png" alt=""
+            ><img src="/Images/Icons/github-Icon.png" alt=""
           /></a>
         </div>
         <hr />
