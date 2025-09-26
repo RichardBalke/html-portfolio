@@ -182,7 +182,7 @@ $translator = init_translator();
 
               <div class="slide">
                 <div class="img-container">
-                  <a target="_blank" href="/ashray/index.html"> 
+                  <a target="_blank" href="/Ashray/index.html"> 
                   <img
                     class="slideimg portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
@@ -220,7 +220,7 @@ $translator = init_translator();
 
               <div class="slide">
                 <div class="img-container">
-                  <a target="_blank" href="/ashray/index.html"> 
+                  <a target="_blank" href="/Ashray/index.html"> 
                   <img
                     class="slideimg portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
@@ -257,7 +257,7 @@ $translator = init_translator();
 
               <div class="slide">
                 <div class="img-container">
-                  <a target="_blank" href="/ashray/index.html"> 
+                  <a target="_blank" href="/Ashray/index.html"> 
                   <img
                     class="slideimg portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
@@ -294,7 +294,7 @@ $translator = init_translator();
 
               <div class="slide">
                 <div class="img-container">
-                  <a target="_blank" href="/ashray/index.html"> 
+                  <a target="_blank" href="/Ashray/index.html"> 
                   <img
                     class="slideimg portfolio-ashray-img"
                     src="/Images/index_Foto_Ashray.png"
