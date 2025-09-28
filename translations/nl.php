@@ -6,6 +6,10 @@ return [
     'nav_bar2' => 'Mijn CV',
     'nav_bar3' => 'Contact',
 
+    // Footer
+    'footer_header' => 'Contactgegevens',
+    'footer_paragraph' => '© 2024 Richard Balke | Junior Web developer. Passie voor het bouwen van websites. Neem gerust contact met mij op of connect met me op LinkedIn. Samen bouwen we iets moois!',
+
     // Index page
     'title_paragraph' => 'Ik ben Richard Balke, een gepassioneerde full-stack developer met oog voor design en gebruiksvriendelijkheid. Mijn doel is om innovatieve en efficiënte oplossingen te creëren die zowel functioneel als visueel aantrekkelijk zijn. Met mijn sterke focus op gebruikerservaring en moderne technologieën streef ik ernaar om Projects naar een hoger niveau te tillen!',
     'skills_button' => 'Mijn vaardigheden',
@@ -30,5 +34,17 @@ return [
 
     // Slide hover message
     'slide_hover_message' => 'Binnekort beschikbaar',
+
+    //Contact form
+    'form_title' => 'Contact formulier',
+    'form_header' => 'Contact formulier',
+    'form_paragraph' => 'Vul het formulier in en ik neem zo snel mogelijk contact met je op.',
+    'form_name' => 'Naam:',
+    'form_company' => 'Bedrijf:',
+    'form_email' => 'E-mailadres:',
+    'form_phone_number' => 'Telefoonnummer:',
+    'phone_num_error' => 'Ongeldig telefoonnummer. Gebruik het formaat 0612345678 of +31612345678',
+    'form_message' => 'Bericht:',
+    'form_send_button' => 'Verstuur',
 
 ];

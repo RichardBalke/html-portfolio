@@ -9,7 +9,7 @@ $translator = init_translator();
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact formulier</title>
+  <title><?= $translator -> get('form_title')?></title>
   <link rel="stylesheet" href="/CSS/style.css" />
   <link rel="stylesheet" href="/CSS/contact.css" />
 
@@ -30,29 +30,29 @@ $translator = init_translator();
 
       <form class="form" method="POST" action="/Handlers/send_email.php" id="contact-Form">
         <div>
-          <h3 style="margin-left: 10px;">Contact formulier</h3>
-          <p id="form-paragraph">Vul het formulier in en ik neem zo snel mogelijk contact met je op.</p>
+          <h3 style="margin-left: 10px;"><?= $translator -> get('form_header')?></h3>
+          <p id="form-paragraph"><?= $translator -> get('form_paragraph')?></p>
         </div>
         <div id="form-Input">
-          <label for="Naam">Naam:</label>
+          <label for="Naam"><?= $translator -> get('form_name')?></label>
           <input type="text" name="naam" placeholder="Naam" required />
           <small class="error"></small>
 
-          <label for="Bedrijf">Bedrijf:</label>
+          <label for="Bedrijf"><?= $translator -> get('form_company')?></label>
           <input type="text" name="bedrijf" placeholder="Bedrijfsnaam" />
           <small class="error"></small>
 
-          <label for="E-mailadres">E-mailadres:</label>
-          <input type="text" name="email" placeholder="voorbeeld@gmail.com" required />
+          <label for="E-mailadres"><?= $translator -> get('form_email')?></label>
+          <input type="email" name="email" placeholder="voorbeeld@gmail.com" required />
           <small class="error"></small>
 
-          <label for="Telefoonnummer">Telefoonnummer:</label>
-          <input type="text" name="telefoon" placeholder="0612345678" />
-          <small class="error"></small>
+          <label for="Telefoonnummer"><?= $translator -> get('form_phone_number')?></label>
+          <input type="tel" name="telefoon" placeholder="0612345678" pattern="^(\+31|0)[1-9][0-9]{8}$" />
+          <small class="error"><?= $translator-> get("phone_num_error") ?></small>
         </div>
 
         <div id="form-Message">
-          <label for="bericht-Input">Bericht:</label>
+          <label for="bericht-Input"><?= $translator -> get('form_message')?></label>
           <textarea
             id="bericht-Input"
             rows="12"
@@ -63,7 +63,7 @@ $translator = init_translator();
         </div>
 
         <div id="contact-Button-Container">
-          <button class="button" type="submit" name="form_button" value="send_data">Verstuur</button>
+          <button class="button" type="submit" name="form_button" value="send_data"><?= $translator -> get('form_send_button')?></button>
         </div>
       </form>
     </div>

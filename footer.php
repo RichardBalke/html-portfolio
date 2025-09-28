@@ -4,9 +4,9 @@
   <body>
     <div class="footer-container">
       <div class="footer-content">
-        <h1 id="contact-gegevens-heading1">Contactgegevens</h1>
+        <h1 id="contact-gegevens-heading1"><?= $translator -> get('footer_header')?></h1>
         <p class="adres">Tel: +31 640260178</p>
-        <p class="adres">Email: richardbalke@gmail.com</p>
+        <p class="adres">E-mail: richardbalke@gmail.com</p>
         <p>
           <a
             style="color: inherit"
@@ -59,10 +59,7 @@
       </div>
 
       <div class="footer-content">
-        <p>
-          © 2024 Richard Balke | Junior Web developer Passie voor het bouwen van
-          websites. Neem gerust contact met mij op of connect met me op
-          LinkedIn. Samen bouwen we iets moois!
+        <p><?= $translator -> get('footer_paragraph')?>
         </p>
       </div>
     </div>

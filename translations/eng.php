@@ -6,6 +6,10 @@ return [
     'nav_bar2' => 'My CV',
     'nav_bar3' => 'Contact',
 
+    // Footer
+    'footer_header' => 'Contact Information',
+    'footer_paragraph' => '© 2024 Richard Balke | Junior Web developer. Passionate about building websites. Feel free to contact me or connect with me on LinkedIn. Together we can build something great!',
+
     // Index page
     'title_paragraph' => 'I am Richard Balke, a passionate full-stack developer with an eye for design and usability. My goal is to create innovative and efficient solutions that are both functional and visually appealing. With a strong focus on user experience and modern technologies, I strive to take projects to the next level!',
     'skills_button' => 'My skills',
@@ -37,4 +41,15 @@ return [
     // Slide hover message
     'slide_hover_message' => 'Work in progress',
 
+    //Contact form
+    'form_title' => 'Contact form',
+    'form_header' => 'Contact form',
+    'form_paragraph' => 'Fill in the form and I will contact you as soon as possible.',
+    'form_name' => 'Name:',
+    'form_company' => 'Company:',
+    'form_email' => 'Email:',
+    'form_phone_number' => 'Phone number:',
+    'phone_num_error' => 'Invalid phone number. Use the format 0612345678 or +31612345678',
+    'form_message' => 'Message:',
+    'form_send_button' => 'Send',
 ];
