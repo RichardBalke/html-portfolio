@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         Telefoonnummer: $telefoon\n
         Bericht:\n$bericht
     ";
-    $headers = "From: $email\r\n";
+    $headers = "From: deb2002311@ctrlbalkedelete.nl\r\n";
     $headers .= "Reply-To: $email\r\n";
 
     // Send email
