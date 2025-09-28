@@ -8,6 +8,7 @@ return [
 
     // Index page
     'title_paragraph' => 'Ik ben Richard Balke, een gepassioneerde full-stack developer met oog voor design en gebruiksvriendelijkheid. Mijn doel is om innovatieve en efficiënte oplossingen te creëren die zowel functioneel als visueel aantrekkelijk zijn. Met mijn sterke focus op gebruikerservaring en moderne technologieën streef ik ernaar om Projects naar een hoger niveau te tillen!',
+    'skills_button' => 'Mijn vaardigheden',
 
     // Skills container
     'skills_container_h3' => 'Vaardigheden',

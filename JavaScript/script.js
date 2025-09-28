@@ -25,17 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
     check = true;
     sessionStorage.setItem("introAnimationShown", "true");
 
+
+    setTimeout(() => {
+      if (check) {
+        allContent.classList.add("show");
+        footerShow.classList.add("show");
+      }
+    }, 6000);
+    
   } else {
     imgLeft.style.transform = "translateX(-400px)";
     imgRight.style.transform = "translateX(400px)";
     headerShow.style.transform = "translateY(0px)";
     allContent.style.display = "block";
     footerShow.style.display = "block";
-  }
-
-  if (check) {
-    allContent.classList.add("show");
-    footerShow.classList.add("show");
   }
 
   // let animationsComplete = 0;
@@ -49,15 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
   //   imgLeft.addEventListener("animationend", handleAnimationEnd);
   //   imgRight.addEventListener("animationend", handleAnimationEnd);
 
-  // setTimeout(() => {
-  //   if (
-  //     !allContent.classList.contains("show") &&
-  //     !footerShow.classList.contains("show")
-  //   ) {
-  //     allContent.classList.add("show");
-  //     footerShow.classList.add("show");
-  //   }
-  // }, 6000);
   // };
 
   if (window.matchMedia("(max-width: 800px)").matches) {
@@ -71,18 +65,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-document
-  .getElementById("skills-text-show-button")
-  .addEventListener("click", function () {
-    const skillsContainer = document.querySelector("#skills-container");
-    const skillsTextContainer = document.querySelector(
-      "#skills-text-container"
-    );
-    const skillsButton = document.querySelector("#skills-text-show-button");
-    skillsTextContainer.classList.add("show");
-    skillsButton.classList.add("hide");
-    skillsContainer.classList.add("show");
-  });
+// document
+//   .getElementById("skills-text-show-button")
+//   .addEventListener("click", function () {
+//     const skillsContainer = document.querySelector("#skills-container");
+//     const skillsTextContainer = document.querySelector(
+//       "#skills-text-container"
+//     );
+//     const skillsButton = document.querySelector("#skills-text-show-button");
+//     skillsTextContainer.classList.add("show");
+//     skillsButton.classList.add("hide");
+//     skillsContainer.classList.add("show");
+//   });
 
 window.addEventListener("scroll", () => {
   const stickyHeader = document.querySelector(".hf-container");

@@ -68,7 +68,7 @@ $translator = init_translator();
         </h3>
         <p id="title-paragraph"><?= $translator->get('title_paragraph') ?></p>
 
-        <button class="button" onclick="window.location.href='index.php#all-Content'">Mijn werk</button>
+        <button class="button" onclick="window.location.href='index.php#all-Content'"><?= $translator->get('skills_button') ?></button>
       </div>
 
       <div id="all-Content">

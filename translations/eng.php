@@ -8,6 +8,7 @@ return [
 
     // Index page
     'title_paragraph' => 'I am Richard Balke, a passionate full-stack developer with an eye for design and usability. My goal is to create innovative and efficient solutions that are both functional and visually appealing. With a strong focus on user experience and modern technologies, I strive to take projects to the next level!',
+    'skills_button' => 'My skills',
 
     // Skills container
     'skills_container_h3' => 'Skills',
